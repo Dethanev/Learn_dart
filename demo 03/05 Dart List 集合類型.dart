@@ -1,32 +1,32 @@
 // 定義List (集合) 的方式
 
 void main() {
-  // 1 第一種定義List的方式
+  // // 1 第一種定義List的方式
 
-  // var li = ["Ethan", 20, true];
+  var li = ["Ethan", 20, true];
 
-  // print(li); //[Ethan, 20, true]
-  // print("$li \n"); //[Ethan, 20, true]
+  print(li); //[Ethan, 20, true]
+  print("$li \n"); //[Ethan, 20, true]
 
-  // print(li.length); //3
+  print(li.length); //3
 
-  // print(li[0]); //Ethan
-  // print(li[1]); //20
-  // print(li[2]); //true
+  print(li[0]); //Ethan
+  print(li[1]); //20
+  print(li[2]); //true
 
-  // 2 第二種定義List的指定類型方式
+  // // 2 第二種定義List的指定類型方式
 
-  // var l1 = <String>["Ethan", "Chris"];
-  // var l2 = <int>[12, 34];
+  var l1 = <String>["Ethan", "Chris"];
+  var l2 = <int>[12, 34];
 
-  // print(l1);
-  // print(l2);
-  // print("$l1 $l2");
+  print(l1);
+  print(l2);
+  print("$l1 $l2");
 
-  /*
-    3 第三種定義List的方式 增加數據 
-    通過[]創建集合它的容量可以變化
-  */
+  // /*
+  //   3 第三種定義List的方式 增加數據 
+  //   通過[]創建集合它的容量可以變化
+  // */
 
   // var l4 = [];
 
@@ -45,12 +45,12 @@ void main() {
 
   // print(l5);  //[Ethan, 20, true, Chris]
 
-  //  4 第四種定義List的方式
+  // //  4 第四種定義List的方式
 
-  // var l6=new List(); //新版本不能用
+  // // var l6=new List(); //新版本不能用
 
-  //創建一個固定長度的集合
-  // 用" "只能用字串類型 用整數只能是整數數值類型 用小數只能數值型別
+  // //創建一個固定長度的集合
+  // // 用" "只能用字串類型 用整數只能是整數數值類型 用小數只能數值型別
   // var l6 = List.filled(2, " "); 
   // print(l6);
   // print(l6[0]);
@@ -63,7 +63,8 @@ void main() {
   // l6.add("老五"); //錯誤不能增加 只能修改
   // print(l6);
 
-  // 通過List.filled創建的集合長度是固定的
+  // // 通過List.filled創建的集合長度是固定的
+
   // var l6 = List.filled(2, " ");
   // print(l6.length);
 
