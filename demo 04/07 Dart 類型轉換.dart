@@ -57,7 +57,28 @@ void main() {
 
   /* 2.其他類型轉換成Booleans類型 */
 
-  
+    // isEmpty:判斷字符串是否為空
+
+      // String name = "Ethan";
+
+      // if (name.isEmpty) {
+      //   //如果name為空就執行
+      //   print("沒名字");
+      // } else {
+      //   //如果name不為空就執行
+      //   print("有名字");
+      // }
 
 
+      /* 補充 */
+      // int? myNum ;
+
+      // if (myNum == null) {
+      //   print("沒有值");
+      // } else {
+      //   print("有值");
+      // }
+
+      // double myNum = 0 / 0;
+      // print(myNum); //NaN
 }

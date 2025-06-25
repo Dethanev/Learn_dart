@@ -30,9 +30,8 @@
 
   2.類型轉換
 
-     (1) Number 與 String 類型之間的轉換
+      Number 與 String 類型之間的轉換
 
-     (2) 其他類型換成Booleans類型
-
+      其他類型換成Booleans類型
 
  */

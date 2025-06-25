@@ -267,8 +267,170 @@ void main() {
   //   print(0); //
   // }
 
-  int myNum = 123;
-  String str = myNum.toString();
+  // int myNum = 123;
+  // String str = myNum.toString();
 
-  print(str is String);
+  // print(str is String);
+
+// isEmpty:判斷字符串是否為空
+  // String name = "Ethan";
+
+  // if (name.isEmpty) {
+  //   //如果name為空就執行
+  //   print("沒名字");
+  // } else {
+  //   //如果name不為空就執行
+  //   print("有名字");
+  // }
+
+  // int? myNum ;
+
+  // if (myNum == null) {
+  //   print("沒有值");
+  // } else {
+  //   print("有值");
+  // }
+
+  // double myNum = 0 / 0;
+
+  // print(myNum); //NaN
+
+  // int a = 10;
+  // int b = a++;//這行等於 先給值在加
+  // //int b = a;
+  // //a = a + 1;
+
+  // print(a); //11
+  // print(b); //10
+
+  // int a = 10;
+  // int b = ++a;//這行等於 先加在給值
+  // //a = a + 1;
+  // //int b = a;
+
+  // print(a); // 11
+  // print(b); // 11
+
+  // int a = 10;
+  // int b = a--;//這行等於 先給值在減
+  // //int b = a;
+  // //a = a - 1;
+
+  // print(a); //9
+  // print(b); //10
+
+  // int i, j;
+
+  // for (i = 1; i < 10; i++) {
+  //   for (j = 1; j < 10; j++) {
+  //     print(i * j);
+  //   }
+
+  // }
+
+  // for (int i = 1; i <= 100; i++) {
+  //   print(i);
+  // }
+
+  // for (int i = 1; i <= 10; i++) {
+  //   print(i);
+  // }
+
+  // 1. 打印出0~50的所有偶數
+
+  // for (int i = 0; i <= 50; i++) {
+  //   if (i % 2 == 0) {
+  //     print(i);
+  //   }
+  // }
+
+  // 2. 求 1 + 2..... 加到 100 的合
+  // int i,sum = 0;
+
+  // for ( i = 1; i <= 100; i++) {
+  //   sum += i;
+  // }
+
+  // print(sum);
+
+  /*
+      sum=0+1;
+
+      sum=0+1+2;
+
+      sum=0+1+2+3+.....100;
+    */
+
+  // 3. 計算5的階乘 (1*2*3*4*5   )
+
+  // int i, sum = 1;
+
+  // for (i = 1; i <= 5; i++) {
+  //   sum *= i;
+  // }
+
+  // print(sum);
+
+  /*
+      sum=1*2;
+
+      sum=1*2*3;
+
+      sum=1*2*3*4;
+
+      sum=1*2*3*4*5;
+    */
+
+  /* 打印List ["張三","李四","老五"] 裡面的內容 */
+
+  // List l1 = ["張三", "李四", "老五"];
+
+  // // 要從0開始 因為是 0 1 2 所以也小於3 不能用小於等於
+  // for (int i = 0; i < 3; i++) {
+  //   print(l1[i]); // 張三  李四   老五
+  // }               // l1[0] l1[1] l1[2]
+
+  // 5. 定義一個二維陣列 輸出裡面的內容
+
+  /* 重要補充 */
+  // List               |   [1,2,3]    |   陣列
+  // Map                |   {"a":1}    |   鍵值對
+  // List<Map>          |   [{"a":1} , {"b":2}]  |陣列裡裝字典
+  // Map<String, List>  |  {"a":[1,2,3]}  |  字典裡裝陣列
+
+  List list = [
+    // 外層是 List（列表）← 有兩個元素
+
+    {
+      // 第一個元素是 Map，有兩個 key
+      "cate": "國內", // 分類名稱
+      "news": [
+        // news 是 List，裡面是三個 Map
+        {"title": "國內新聞 1"},
+        {"title": "國內新聞 2"},
+        {"title": "國內新聞 3"},
+      ]
+    },
+
+    {
+      //第二個分類
+      "cate": "國外",
+      "news": [
+        {"title": "國外新聞 1"},
+        {"title": "國外新聞 2"},
+        {"title": "國外新聞 3"},
+      ]
+    }
+  ];
+
+  int i, j;
+
+  for (i = 0; i < list.length; i++) {
+    print(list[i]["cate"]);
+    print("----------");
+    for (j = 0; j < list[i]["news"].length; j++) {
+      print(list[i]["news"][j]["title"]);
+    }
+    print('');
+  }
 }
