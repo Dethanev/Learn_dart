@@ -572,18 +572,90 @@ void main() {
   /* while 和 while 的區別  第一次循環條件不成立的情況下*/
 
   // while
-  int i = 2;
+  // int i = 2;
 
-  while (i < 2) {
-    print("執行代碼"); // 不會執行
-  }
+  // while (i < 2) {
+  //   print("執行代碼"); // 不會執行
+  // }
 
-  // do while
-  int j = 2;
+  // // do while
+  // int j = 2;
 
-  do {
-    print("執行代碼"); // 會執行
-  } while (j < 2);
+  // do {
+  //   print("執行代碼"); // 會先執行一次
+  // } while (j < 2);
 
+  // int i;
+  // for (i = 1; i <= 10; i++) {
+  //   if (i == 2) break;
+  //   print(i);
+  // }
+
+  // int i;
+
+  // for (i = 1; i <= 10; i++) {
+  //   if (i == 2) continue;
+  //   print(i);
+  // }
+
+  // for (int i = 1; i < 5; i++) {
+  //   print("外層-----$i");
+  //   for (int j = 1; j < 5; j++) {
+  //     if (j == 3) break;
+  //     print("裡面$j");
+  //   }
+  // }
+
+  // List myList = ["Ethan", 'Chris', "LY"];
+
+  // print(myList); // [Ethan, Chris, LY]
+  // /* length isEmpty isNotEmpty */
+  // print(myList.length); // 3
+  // print(myList.isEmpty); // false
+  // print(myList.isNotEmpty); // true
+  // /* reversed */
+  // print(myList.reversed); // (LY, Chris, Ethan) 對列表進行倒敘排序
+  // /*
+  // reversed 回傳的是 Iterable，不是 List 所以輸出才不是 中括號
+  // Iterable = 可看、可走訪，但不能直接改裡面的資料 現在初學知道這樣就好
+  // */
+  // List newMyList = myList.toList(); // Iterable 轉回 List 就可以修改
+  // print(newMyList); // [Ethan, Chris, LY]
+
+/* List 裡面常用的方法 */
+  // List myList = ["Ethan", 'Chris', "LY"];
+  // /* add addAll*/
+  // myList.add("釋迦"); // 增加資料 只能增加一個
+  // myList.addAll(["芒果", "草莓"]); // 拼接到數組(陣列)裡 所以要用中括號
+  // /* indexOf */
+  // print(myList.indexOf("LY"));  // 查找數據 輸出 2 因為數組是從 0 1 2 所以是 2
+  // print(myList.indexOf("YL"));  // 查找數據 查找不到回傳-1
+  // /* remove removeAt */
+  // myList.remove("LY"); // 刪除LY數據
+  // myList.removeAt(2); // 刪除 2 數據就是 LY
+
+  // print(myList); // 開啟這裡測試
+
+  // List myList = ["Ethan", 'Chris', "LY"];
+  // /* fillRange */
+  // myList.fillRange(0, 2, 'aaa'); // 修改多個數據 0是開始 2是結尾 所以改到 0 1而已 改的內容'aaa'
+  // /* insert */
+  // myList.insert(1, 'aaa'); // 插入單個數據 在原本 Chris 的前面 插入'aaa'
+  // /* insertAll */
+  // myList.insertAll(1, ['aaa','bbb']);  // 插入多個數據 在原本 Chris 的前面 插入'aaa' 和 'bbb'
+  // print(myList); // 開啟這裡測試
+
+  // List myList = ["Ethan", 'Chris', "LY"];
+  // /* join */
+  // var str = myList.join('-'); //list 轉換成字符串
+
+  // print(str); // Ethan-Chris-LY
+  // print(str is String); // true 是String類型 可以用String 宣告
+  // /* split */
+  // String str = "Ethan- Chris- LY";
+  // List list = str.split('-');
+
+  // print(list); // [Ethan,  Chris,  LY]
+  // print(list is List); // true 是List類型 可以用List 宣告
 
 }
