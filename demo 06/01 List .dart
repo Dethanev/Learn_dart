@@ -36,7 +36,7 @@ void main(){
     print(myList.length); // 3
     print(myList.isEmpty); // false
     print(myList.isNotEmpty); // true
-  // /* reversed */
+  /* reversed */
     print(myList.reversed); // (LY, Chris, Ethan) 對列表進行倒敘排序
     /*
     reversed 回傳的是 Iterable，不是 List 所以輸出才不是 中括號
@@ -49,13 +49,13 @@ void main(){
 
     // List myList = ["Ethan", 'Chris', "LY"];
 
-  // /* add addAll*/
+  /* add addAll*/
     // myList.add("釋迦"); // 增加資料 只能增加一個
     // myList.addAll(["芒果", "草莓"]); // 拼接到數組(陣列)裡 所以要用中括號
-  // /* indexOf */
+  /* indexOf */
     // print(myList.indexOf("LY"));  // 查找數據 輸出 2 因為數組是從 0 1 2 所以是 2
     // print(myList.indexOf("YL"));  // 查找數據 查找不到回傳-1
-  // /* remove removeAt */
+  /* remove removeAt */
     // myList.remove("LY"); // 刪除LY數據
     // myList.removeAt(2); // 刪除 2 數據就是 LY
 
@@ -63,22 +63,22 @@ void main(){
 
     // List myList = ["Ethan", 'Chris', "LY"];
 
-  // /* fillRange */
+  /* fillRange */
     // myList.fillRange(0, 2, 'aaa'); // 修改多個數據 0是開始 2是結尾 所以改到 0 1而已 改的內容'aaa'
-  // /* insert */
+  /* insert */
     // myList.insert(1, 'aaa'); // 插入單個數據 在原本 Chris 的前面 插入'aaa'
-  // /* insertAll */
+  /* insertAll */
     // myList.insertAll(1, ['aaa','bbb']);  // 插入多個數據 在原本 Chris 的前面 插入'aaa' 和 'bbb'
     
     // print(myList); // 開啟這裡測試
 
     // List myList = ["Ethan", 'Chris', "LY"];
-  // /* join */
+  /* join */
     // var str = myList.join('-'); //list 轉換成字符串
 
     // print(str); // Ethan-Chris-LY
     // print(str is String); // true 是String類型 可以用String 宣告
-  // /* split */
+  /* split */
     // String str = "Ethan- Chris- LY";
     // List list = str.split('-');
 
