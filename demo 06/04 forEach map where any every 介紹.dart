@@ -1,0 +1,7 @@
+/*
+  forEach
+  map
+  where
+  any
+  every
+ */

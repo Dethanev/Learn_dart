@@ -658,4 +658,57 @@ void main() {
   // print(list); // [Ethan,  Chris,  LY]
   // print(list is List); // true 是List類型 可以用List 宣告
 
+  // var s = new Set();
+
+  // s.add('Ethan');
+  // s.add('Chris');
+  // s.add('Ethan');
+
+  // print(s); // {Ethan, Chris} 不會重複打印
+
+/* Set 基本用法 */
+  // var s = new Set();
+
+  // s.add('Ethan');
+  // s.add('Chris');
+  // s.add('Ethan');
+
+  // print(s); // {Ethan, Chris} 不會重複打印
+  // print(s.toList());  // Set 變 List [Ethan, Chris] 沒有在一個'Ethan'是因為他只是單純轉換 Set 的s變數
+/* 影片中教的刪除重複資訊做法 */
+  // List myList = ['張三', '李四', '老五', '張三', '李四', '老五'];
+
+  // var s = new Set();
+  // s.addAll(['張三', '李四', '老五', '張三', '李四', '老五']);
+  // print(s.toList());  // {張三, 李四, 老五}
+
+/* 我的作法 簡單 快 清楚 */
+
+  // List myList = ['張三', '李四', '老五', '張三', '李四', '老五'];
+
+  // print(myList.toSet());  // {張三, 李四, 老五}
+
+  // Map<String, dynamic> person = {"name": "張三", "age": 20};
+  // var m = new Map();
+
+  // m["name"] = "李四";
+
+  // print(person);
+  // print(m);
+
+  // Map<String, dynamic> person = {"name": "張三", "age": "20", "sex": "男"};
+
+  // person.addAll({
+  //   "work": ['敲代碼', '送外賣'],
+  //   "height":160
+  // });
+
+  // print(person);
+
+  // person.remove("sex");
+  // print(person);  // {name: 張三, age: 20}
+  // print(person.remove("sex")); // 不能因為方便 就這樣用 只會輸出你刪掉的內容
+
+  
+  // print(person.containsValue('張三'));  // 看Map是否有這個值 true 有值
 }

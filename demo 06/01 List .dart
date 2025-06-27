@@ -21,9 +21,9 @@ List 裡面常用的屬性和方法：
     split           字串轉 List（其實是 String 方法）
     forEach         遍歷
     map             映射轉換
-    where
-    any
-    every
+    where           過濾（回傳符合條件的鍵值對）
+    any             是否有任一項符合條件
+    every           是否所有項都符合條件
 */
 void main(){
 
@@ -46,7 +46,9 @@ void main(){
     print(newMyList); // [Ethan, Chris, LY]
 
 /* List 裡面常用的方法 */
+
     // List myList = ["Ethan", 'Chris', "LY"];
+
   // /* add addAll*/
     // myList.add("釋迦"); // 增加資料 只能增加一個
     // myList.addAll(["芒果", "草莓"]); // 拼接到數組(陣列)裡 所以要用中括號
@@ -60,12 +62,14 @@ void main(){
     // print(myList); // 開啟這裡測試
 
     // List myList = ["Ethan", 'Chris', "LY"];
+
   // /* fillRange */
     // myList.fillRange(0, 2, 'aaa'); // 修改多個數據 0是開始 2是結尾 所以改到 0 1而已 改的內容'aaa'
   // /* insert */
     // myList.insert(1, 'aaa'); // 插入單個數據 在原本 Chris 的前面 插入'aaa'
   // /* insertAll */
     // myList.insertAll(1, ['aaa','bbb']);  // 插入多個數據 在原本 Chris 的前面 插入'aaa' 和 'bbb'
+    
     // print(myList); // 開啟這裡測試
 
     // List myList = ["Ethan", 'Chris', "LY"];
