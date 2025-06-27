@@ -3,10 +3,10 @@ void main() {
 
   // 1. 如果 i 等於 4 的話跳過
 
-  // for (int i = 1; i < 10; i++) {
-  //   if (i == 4) continue;
-  //   print(i);
-  // }
+  for (int i = 1; i < 10; i++) {
+    if (i == 4) continue;
+    print(i);
+  }
 
   // 2. 如果 i 等於 4 的話跳出迴圈
 
