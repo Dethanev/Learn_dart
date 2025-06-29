@@ -833,6 +833,8 @@
 
 // 調用函式傳參
 
+// import 'dart:ffi';
+
 void main() {
   // 1. 1-100求和
 
@@ -933,4 +935,112 @@ void main() {
   // }
   // // 調用fn2 這個函式 把fn1 這個方法當作參數傳入
   // fn2(fn1); // fn1
+
+/* 需求: 使用forEach打印下面List裡面的數據 */
+/* 一般函式 */
+  // List box = ['香蕉', '蘋果', '芭樂'];
+
+  // box.forEach((value) {
+  //   print(value);
+  // });
+  // print(''); // 換行
+/* 高效率簡潔的箭頭函式 */
+  // box.forEach((value) =>print(value)); // 單一行一個動作就可以用 => 1.還有一行的話 就不用大括號括起來 2.print後面就不用加;分號
+
+  // box.forEach((value) => { // 不能用 因為這裡的大括號會判定為Set集合
+  //   print(value)
+  // });
+
+/* 需求: 修改下面List裡面的數據 讓數組大於2的值乘以2 */
+
+  // List list = [4, 1, 2, 3, 4];
+/* 一般函式 */
+  // var newList = list.map((value) {
+  //   if (value > 2) {  // 如果value大於2
+  //     return value * 2; // 就回傳value*2
+  //   }
+  //   return value; // 都沒有就回傳value
+  // });
+
+  // print(newList.toList());
+
+/* 高效率簡潔的箭頭函式 */
+  // var newList = list.map((value) => value > 2 ? value * 2 : value);
+
+  // print(newList.toList());
+
+/* 
+  需求: 1.定義一個函式isEvenNumber來判斷一個數是否偶數
+        2.定義一個函式打印1-n以內的所有偶數
+*/
+// 1.
+//   bool isEvenNumber(int n) {
+//     if (n % 2 == 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+// // 2.
+//   void printNum(int x) {
+//     for (int i = 1; i <= x; i++) {
+//       if(isEvenNumber(i)){  // 傳入i值給isEvenNumber判斷是否為偶數
+//         print(i);
+//       }
+//     }
+//   }
+
+//   printNum(19);
+
+/* 具名函式 */
+
+  // void printNum() {
+  //   print(123);
+  // }
+  // printNum(); // 123
+
+/* 匿名函式 */
+
+  // 通常用在 forEach map 等方法裡
+  // (value) {
+  //   print(value + 12);
+  // };
+
+/* 自執行函式 */
+  // ((int n) {  // 宣告參數
+  //   print(n); // 12
+  //   print('我是自執行函式');
+  // })(12); // 丟入參數
+
+/* 函式的遞歸 */
+
+  // int sum = 1;
+
+  // void fn(int n) {
+  //   sum *= n;
+  //   if (n == 1) { // 怕死循環 所以規定範圍
+  //     return;
+  //   }
+  //   fn(n - 1);  // 自己叫自己 要有範圍 不然會死循環
+  // }
+  // fn(5);
+  // print(sum); // 120
+
+  /* 通過方法的遞歸 求1-100的和 */
+
+  // int sum = 0;
+
+  // void fn(int x) {
+  //   sum += x;
+  //   if (x == 0) { // 怕死循環 所以規定範圍
+  //     return;
+  //   }
+  //   fn(x - 1);  // 遞歸
+  // }
+
+  // fn(100);
+  // print(sum); // 5050
+
+
+  
 }

@@ -79,7 +79,7 @@ void main(){
   // var s = new Set();
 
   // s.addAll([1, 22, 333]);
-  // s.forEach((value) => print(value)); // 單一個動作就可以用 =>
+  // s.forEach((value) => print(value)); // 單一行一個動作就可以用 => 1.還有一行的話 就不用大括號括起來 2.print後面就不用加;分號
 
 /* Map */
   /* forEach */
