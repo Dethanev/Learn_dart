@@ -35,7 +35,7 @@
 */
 void main(){
 
-/* List 是類 */
+/* List 是class類 */
 
   List list = ['芒果'];  
   list.isEmpty;
@@ -43,12 +43,12 @@ void main(){
   list.add('芭樂');
   print(list);
 
-/* Map 是類 */ 
+/* Map 是class類*/ 
 
   Map m = new Map(); 
   m["name"] = ["張三"];
   m.addAll({"age": 20});
   m.isEmpty;
   print(m);
-  
+
 }
