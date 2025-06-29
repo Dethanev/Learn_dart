@@ -835,7 +835,7 @@
 
 // import 'dart:ffi';
 
-void main() {
+// void main() {
   // 1. 1-100求和
 
   // int sum = 0;
@@ -1041,6 +1041,27 @@ void main() {
   // fn(100);
   // print(sum); // 5050
 
+  // List list = ['芒果']; // List 是類
+  // list.isEmpty;
+  // list.add('香蕉');
+  // list.add('芭樂');
 
-  
+  // print(list);
+
+  // Map m = new Map(); // Map 是類
+  // m["name"] = ["張三"];
+  // m.addAll({"age": 20});
+  // m.isEmpty;
+
+  // print(m);
+// }
+
+/* 定自類 */
+class Person{
+
+}
+
+
+void main(){
+
 }
