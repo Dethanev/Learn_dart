@@ -836,138 +836,138 @@
 // import 'dart:ffi';
 
 // void main() {
-  // 1. 1-100求和
+// 1. 1-100求和
 
-  // int sum = 0;
+// int sum = 0;
 
-  // for (int i = 1; i <= 100; i++) {
-  //   sum += i;
-  // }
-  // print(sum);
+// for (int i = 1; i <= 100; i++) {
+//   sum += i;
+// }
+// print(sum);
 
-  // 2. 1-90求和
+// 2. 1-90求和
 
-  // int sum = 0;
+// int sum = 0;
 
-  // for (int i = 1; i <= 90; i++) {
-  //   sum += i;
-  // }
-  // print(sum);
+// for (int i = 1; i <= 90; i++) {
+//   sum += i;
+// }
+// print(sum);
 
-  // 3. 1-60求和
+// 3. 1-60求和
 
-  // int sum = 0;
+// int sum = 0;
 
-  // for (int i = 1; i <= 60; i++) {
-  //   sum += i;
-  // }
-  // print(sum);
+// for (int i = 1; i <= 60; i++) {
+//   sum += i;
+// }
+// print(sum);
 
 /* 1. 定義一個方法 求1到這個數的所有數的和 */
 
-  // int sumNum(int x) {
-  //   // x 參數最好加上型別比較安全
-  //   int sum = 0;
+// int sumNum(int x) {
+//   // x 參數最好加上型別比較安全
+//   int sum = 0;
 
-  //   for (int i = 1; i <= x; i++) {
-  //     // 計算合的迴圈
-  //     sum += i;
-  //   }
-  //   return sum; // 回傳和
-  // }
+//   for (int i = 1; i <= x; i++) {
+//     // 計算合的迴圈
+//     sum += i;
+//   }
+//   return sum; // 回傳和
+// }
 
-  // print(sumNum(60)); // 1830 // 這裡的參數可以隨便改數字 就會算到該數字的和
-  // print(sumNum(5)); // 15
-  // print(sumNum(100)); // 5050
+// print(sumNum(60)); // 1830 // 這裡的參數可以隨便改數字 就會算到該數字的和
+// print(sumNum(5)); // 15
+// print(sumNum(100)); // 5050
 
 /* 2. 定義一個函式 然後打印用戶信息 */
 
-  // String printUserInfo(String username, int age) {
-  //   return "名字: $username----年齡: $age";
-  // }
+// String printUserInfo(String username, int age) {
+//   return "名字: $username----年齡: $age";
+// }
 
-  // print(printUserInfo('Ethan', 18));
+// print(printUserInfo('Ethan', 18));
 
 /* 3. 定義一個可選參數的函式 */
 
-  // String printUserInfo(String username, [int? age]) { // 加中括號就是不一定有參數 不知道有沒有值就要加? 用來宣告空型態
-  //   if(age!=null){  // 是否不等於空值
-  //     return "名字: $username----年齡: $age";
-  //   }
-  //   return "名字: $username----年齡:*"; // 都沒有就回傳這個
-  // }
+// String printUserInfo(String username, [int? age]) { // 加中括號就是不一定有參數 不知道有沒有值就要加? 用來宣告空型態
+//   if(age!=null){  // 是否不等於空值
+//     return "名字: $username----年齡: $age";
+//   }
+//   return "名字: $username----年齡:*"; // 都沒有就回傳這個
+// }
 
-  // print(printUserInfo('Ethan'));  // 名字: Ethan----年齡:*
+// print(printUserInfo('Ethan'));  // 名字: Ethan----年齡:*
 
 /* 4. 定義一個默認參數的函式 */
 
-  // String printUserInfo(String username, [String? sex='男',int? age,]) { // 默認參數通常放前面 丟實際參數的時候 順序不要搞錯了
-  //   if(age!=null){  // 是否不等於空值
-  //     return "名字:$username--性別:$sex--年齡:$age";
-  //   }
-  //   return "名字:$username--性別:$sex--年齡:*"; // 都沒有就回傳這個
-  // }
+// String printUserInfo(String username, [String? sex='男',int? age,]) { // 默認參數通常放前面 丟實際參數的時候 順序不要搞錯了
+//   if(age!=null){  // 是否不等於空值
+//     return "名字:$username--性別:$sex--年齡:$age";
+//   }
+//   return "名字:$username--性別:$sex--年齡:*"; // 都沒有就回傳這個
+// }
 
-  // print(printUserInfo('Ethan'));  // 名字:Ethan--性別:男--年齡:*
-  // print(printUserInfo('Ethan','女'));  // 名字:Ethan--性別:女--年齡:*
-  // print(printUserInfo('Ethan','女',30));  // 名字:Ethan--性別:女--年齡:30
+// print(printUserInfo('Ethan'));  // 名字:Ethan--性別:男--年齡:*
+// print(printUserInfo('Ethan','女'));  // 名字:Ethan--性別:女--年齡:*
+// print(printUserInfo('Ethan','女',30));  // 名字:Ethan--性別:女--年齡:30
 
 /* 5. 定義一個命名參數的函式 */
 
-  // String printUserInfo(String username,{ String? sex='男',int? age,}) { // 默認參數通常放前面 丟實際參數的時候 順序不要搞錯了
-  //   if(age!=null){  // 是否不等於空值
-  //     return "名字:$username--性別:$sex--年齡:$age";
-  //   }
-  //   return "名字:$username--性別:$sex--年齡:*"; // 都沒有就回傳這個
-  // }
+// String printUserInfo(String username,{ String? sex='男',int? age,}) { // 默認參數通常放前面 丟實際參數的時候 順序不要搞錯了
+//   if(age!=null){  // 是否不等於空值
+//     return "名字:$username--性別:$sex--年齡:$age";
+//   }
+//   return "名字:$username--性別:$sex--年齡:*"; // 都沒有就回傳這個
+// }
 
-  // print(printUserInfo('Ethan',age:18,sex: '未知'));  // 名字:Ethan--性別:未知--年齡:18
+// print(printUserInfo('Ethan',age:18,sex: '未知'));  // 名字:Ethan--性別:未知--年齡:18
 
 /* 6. 實現一個 把方法當作參數的函式 */
 
-  // //函式1
-  // void fn1() {
-  //   print("fn1");
-  // }
-  // //函式2
-  // void fn2(fn) {
-  //   fn();
-  // }
-  // // 調用fn2 這個函式 把fn1 這個方法當作參數傳入
-  // fn2(fn1); // fn1
+// //函式1
+// void fn1() {
+//   print("fn1");
+// }
+// //函式2
+// void fn2(fn) {
+//   fn();
+// }
+// // 調用fn2 這個函式 把fn1 這個方法當作參數傳入
+// fn2(fn1); // fn1
 
 /* 需求: 使用forEach打印下面List裡面的數據 */
 /* 一般函式 */
-  // List box = ['香蕉', '蘋果', '芭樂'];
+// List box = ['香蕉', '蘋果', '芭樂'];
 
-  // box.forEach((value) {
-  //   print(value);
-  // });
-  // print(''); // 換行
+// box.forEach((value) {
+//   print(value);
+// });
+// print(''); // 換行
 /* 高效率簡潔的箭頭函式 */
-  // box.forEach((value) =>print(value)); // 單一行一個動作就可以用 => 1.還有一行的話 就不用大括號括起來 2.print後面就不用加;分號
+// box.forEach((value) =>print(value)); // 單一行一個動作就可以用 => 1.還有一行的話 就不用大括號括起來 2.print後面就不用加;分號
 
-  // box.forEach((value) => { // 不能用 因為這裡的大括號會判定為Set集合
-  //   print(value)
-  // });
+// box.forEach((value) => { // 不能用 因為這裡的大括號會判定為Set集合
+//   print(value)
+// });
 
 /* 需求: 修改下面List裡面的數據 讓數組大於2的值乘以2 */
 
-  // List list = [4, 1, 2, 3, 4];
+// List list = [4, 1, 2, 3, 4];
 /* 一般函式 */
-  // var newList = list.map((value) {
-  //   if (value > 2) {  // 如果value大於2
-  //     return value * 2; // 就回傳value*2
-  //   }
-  //   return value; // 都沒有就回傳value
-  // });
+// var newList = list.map((value) {
+//   if (value > 2) {  // 如果value大於2
+//     return value * 2; // 就回傳value*2
+//   }
+//   return value; // 都沒有就回傳value
+// });
 
-  // print(newList.toList());
+// print(newList.toList());
 
 /* 高效率簡潔的箭頭函式 */
-  // var newList = list.map((value) => value > 2 ? value * 2 : value);
+// var newList = list.map((value) => value > 2 ? value * 2 : value);
 
-  // print(newList.toList());
+// print(newList.toList());
 
 /* 
   需求: 1.定義一個函式isEvenNumber來判斷一個數是否偶數
@@ -994,74 +994,95 @@
 
 /* 具名函式 */
 
-  // void printNum() {
-  //   print(123);
-  // }
-  // printNum(); // 123
+// void printNum() {
+//   print(123);
+// }
+// printNum(); // 123
 
 /* 匿名函式 */
 
-  // 通常用在 forEach map 等方法裡
-  // (value) {
-  //   print(value + 12);
-  // };
+// 通常用在 forEach map 等方法裡
+// (value) {
+//   print(value + 12);
+// };
 
 /* 自執行函式 */
-  // ((int n) {  // 宣告參數
-  //   print(n); // 12
-  //   print('我是自執行函式');
-  // })(12); // 丟入參數
+// ((int n) {  // 宣告參數
+//   print(n); // 12
+//   print('我是自執行函式');
+// })(12); // 丟入參數
 
 /* 函式的遞歸 */
 
-  // int sum = 1;
+// int sum = 1;
 
-  // void fn(int n) {
-  //   sum *= n;
-  //   if (n == 1) { // 怕死循環 所以規定範圍
-  //     return;
-  //   }
-  //   fn(n - 1);  // 自己叫自己 要有範圍 不然會死循環
-  // }
-  // fn(5);
-  // print(sum); // 120
+// void fn(int n) {
+//   sum *= n;
+//   if (n == 1) { // 怕死循環 所以規定範圍
+//     return;
+//   }
+//   fn(n - 1);  // 自己叫自己 要有範圍 不然會死循環
+// }
+// fn(5);
+// print(sum); // 120
 
-  /* 通過方法的遞歸 求1-100的和 */
+/* 通過方法的遞歸 求1-100的和 */
 
-  // int sum = 0;
+// int sum = 0;
 
-  // void fn(int x) {
-  //   sum += x;
-  //   if (x == 0) { // 怕死循環 所以規定範圍
-  //     return;
-  //   }
-  //   fn(x - 1);  // 遞歸
-  // }
+// void fn(int x) {
+//   sum += x;
+//   if (x == 0) { // 怕死循環 所以規定範圍
+//     return;
+//   }
+//   fn(x - 1);  // 遞歸
+// }
 
-  // fn(100);
-  // print(sum); // 5050
+// fn(100);
+// print(sum); // 5050
 
-  // List list = ['芒果']; // List 是類
-  // list.isEmpty;
-  // list.add('香蕉');
-  // list.add('芭樂');
+// List list = ['芒果']; // List 是類
+// list.isEmpty;
+// list.add('香蕉');
+// list.add('芭樂');
 
-  // print(list);
+// print(list);
 
-  // Map m = new Map(); // Map 是類
-  // m["name"] = ["張三"];
-  // m.addAll({"age": 20});
-  // m.isEmpty;
+// Map m = new Map(); // Map 是類
+// m["name"] = ["張三"];
+// m.addAll({"age": 20});
+// m.isEmpty;
 
-  // print(m);
+// print(m);
 // }
 
 /* 定自類 */
-class Person{
+class Person {
+  String name = '張三';
+  int age = 20;
 
+  void getInfo() {  // 宣告輸出名字年齡的類
+    // print("$name----$age"); 類裡不推薦用這個
+    print("${this.name}----${this.age}"); // 要加大括號不然輸出會沒有類型
+  }
+
+  void setInfo(age) { // 宣告換年齡的類
+    this.age = age;
+  }
 }
 
+void main() {
+/* 不推薦這樣寫 */
+  // var p1 = new Person();
 
-void main(){
+  // print(p1.name); // 張三
+  // print(p1.age);  // 20
+  // p1.getInfo(); // 張三----20
 
+/* 推薦這樣寫 */
+  Person p1 = new Person(); // 宣告p1是Person類
+
+  print(p1.name); // 用p1物件導向到name
+  p1.setInfo(18); // 用p1物件導向到setInfo類
+  p1.getInfo(); // 用p1物件導向到getInfo類
 }
