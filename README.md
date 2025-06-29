@@ -27,7 +27,7 @@ https://www.bilibili.com/video/BV1S4411E7LY?spm_id_from=333.788.videopod.episode
 | `demo 04` | 各種運算符 條表達式 的詳細介紹                       |
 | `demo 05` | 迴圈的詳細介紹                                      |
 | `demo 06` | 三大容器 List Set Map 的詳細介紹                    |
-| `demo 06` | 函式的詳細介紹                                      |
+| `demo 07` | 函式的詳細介紹                                      |
 | `test.dart`  | 主測試場，用來試寫各段邏輯或函式驗證               |
 
 ---
