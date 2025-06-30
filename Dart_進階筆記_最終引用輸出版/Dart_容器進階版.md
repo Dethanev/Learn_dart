@@ -232,3 +232,153 @@ print(filtered);
 ```
 **輸出結果：**
 [7, 9]
+
+
+---
+
+## 💻 範例程式（含輸出結果）
+
+```dart
+var names = ["Ethan", "Chris"];
+print(names[0]);
+// 輸出結果：Ethan
+```
+
+```dart
+var tags = {"news", "tech"};
+print(tags);
+// 輸出結果：{news, tech}
+```
+
+```dart
+var scores = {"Ethan": 100, "Chris": 90};
+print(scores["Ethan"]);
+// 輸出結果：100
+```
+
+```dart
+var fruits = ["apple", "banana", "orange"];
+print(fruits);
+// 輸出結果：[apple, banana, orange]
+```
+
+```dart
+var numbers = [1, 3, 5];
+var doubled = numbers.map((e) => e * 2).toList();
+print(doubled);
+// 輸出結果：[2, 6, 10]
+```
+
+```dart
+var filtered = [3, 7, 9].where((e) => e > 5).toList();
+print(filtered);
+// 輸出結果：[7, 9]
+```
+
+
+---
+
+## 💻 範例程式（含輸出結果）
+
+```dart
+var names = ["Ethan", "Chris"];
+print(names[0]);
+```
+
+```
+Ethan
+```
+
+```dart
+var tags = {"news", "tech"};
+print(tags);
+```
+
+```
+{news, tech}
+```
+
+```dart
+var scores = {"Ethan": 100, "Chris": 90};
+print(scores["Ethan"]);
+```
+
+```
+100
+```
+
+```dart
+var fruits = ["apple", "banana", "orange"];
+print(fruits);
+```
+
+```
+[apple, banana, orange]
+```
+
+```dart
+var numbers = [1, 3, 5];
+var doubled = numbers.map((e) => e * 2).toList();
+print(doubled);
+```
+
+```
+[2, 6, 10]
+```
+
+```dart
+var filtered = [3, 7, 9].where((e) => e > 5).toList();
+print(filtered);
+```
+
+```
+[7, 9]
+```
+
+
+---
+
+## 💻 範例程式（含輸出結果）
+
+```dart
+var names = ["Ethan", "Chris"];
+print(names[0]);
+```
+> **輸出結果：**  
+> Ethan
+
+```dart
+var tags = {"news", "tech"};
+print(tags);
+```
+> **輸出結果：**  
+> {news, tech}
+
+```dart
+var scores = {"Ethan": 100, "Chris": 90};
+print(scores["Ethan"]);
+```
+> **輸出結果：**  
+> 100
+
+```dart
+var fruits = ["apple", "banana", "orange"];
+print(fruits);
+```
+> **輸出結果：**  
+> [apple, banana, orange]
+
+```dart
+var numbers = [1, 3, 5];
+var doubled = numbers.map((e) => e * 2).toList();
+print(doubled);
+``>
+> **輸出結果：**  
+> [2, 6, 10]
+
+```dart
+var filtered = [3, 7, 9].where((e) => e > 5).toList();
+print(filtered);
+```
+> **輸出結果：**  
+> [7, 9]
