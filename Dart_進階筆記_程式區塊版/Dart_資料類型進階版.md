@@ -166,3 +166,59 @@ if (str is String) {
 | print(newList);       | [Item 0, Item 1, Item 2] |
 | print(person["name"]);| 張三           |
 | print(x is int);      | true           |
+
+
+---
+
+## 💻 範例程式與輸出結果
+
+```dart
+String str1 = 'Hello';
+String str2 = 'World!';
+print(str1 + " " + str2);
+```
+**輸出結果：**
+Hello World!
+
+```dart
+int a = 20;
+double b = 30.5;
+print(a + b);
+```
+**輸出結果：**
+50.5
+
+```dart
+bool flag = true;
+print(flag);
+```
+**輸出結果：**
+true
+
+```dart
+var list = ["Ethan", 20, true];
+print(list);
+```
+**輸出結果：**
+[Ethan, 20, true]
+
+```dart
+var newList = List.generate(3, (index) => 'Item $index');
+print(newList);
+```
+**輸出結果：**
+[Item 0, Item 1, Item 2]
+
+```dart
+var person = {"name": "張三", "age": 20};
+print(person["name"]);
+```
+**輸出結果：**
+張三
+
+```dart
+num x = 10;
+print(x is int);
+```
+**輸出結果：**
+true

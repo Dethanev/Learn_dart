@@ -154,3 +154,76 @@ if (str is String) {
 | print(str); | 123 |
 | print(0); | 0 |
 | print("是 String 型別"); | 是 String 型別 |
+
+
+---
+
+## 💻 範例程式與輸出結果
+
+```dart
+int a = 13;
+int b = 5;
+print(a + b);
+```
+**輸出結果：**
+18
+
+```dart
+print(a / b);
+```
+**輸出結果：**
+2.6
+
+```dart
+print(a == b);
+```
+**輸出結果：**
+false
+
+```dart
+bool flag = false;
+print(flag);
+print(!flag);
+```
+**輸出結果：**
+false
+true
+
+```dart
+int c = a + b;
+print(c);
+```
+**輸出結果：**
+18
+
+```dart
+bool f = true;
+String result = f ? '我是true' : '我是false';
+print(result);
+```
+**輸出結果：**
+我是true
+
+```dart
+int? x;
+int y = x ?? 10;
+print(y);
+```
+**輸出結果：**
+10
+
+```dart
+String s = '123';
+int n = int.parse(s);
+print(n);
+```
+**輸出結果：**
+123
+
+```dart
+int num = 123;
+String str = num.toString();
+print(str);
+```
+**輸出結果：**
+123
