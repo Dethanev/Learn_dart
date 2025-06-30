@@ -82,7 +82,7 @@ const double atm = 1.01325 * bar;
 | class     | finally  | on       | try     | const   | for     | operator| typedef |
 | continue  | Function | part     | var     | covariant | get   | required| void   |
 | default   | hide     | rethrow  | while   | deferred | if    | return  | with   |
-| do        | implements| set     | yield   |         |       |         |      |
+| do        | implements| set     | yield   |         |      |         |      |
 
 ---
 
@@ -101,4 +101,4 @@ const double atm = 1.01325 * bar;
 
 ### 💬 結論
 
-> 「純英文無表頭表格，極簡清爽，一秒快速對照與背誦！」
+> 「表格排好、極簡清楚，Markdown 直接顯示超完整！」
