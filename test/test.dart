@@ -1057,32 +1057,89 @@
 // }
 
 /* 定自類 */
+// class Person {
+//   String name = '張三';
+//   int age = 20;
+
+//   void getInfo() {  // 宣告輸出名字年齡的類
+//     // print("$name----$age"); 類裡不推薦用這個
+//     print("${this.name}----${this.age}"); // 要加大括號不然輸出會沒有類型
+//   }
+
+//   void setInfo(age) { // 宣告換年齡的類
+//     this.age = age;
+//   }
+// }
+
+// void main() {
+// /* 不推薦這樣寫 */
+//   // var p1 = new Person();
+
+//   // print(p1.name); // 張三
+//   // print(p1.age);  // 20
+//   // p1.getInfo(); // 張三----20
+
+// /* 推薦這樣寫 */
+//   Person p1 = new Person(); // 宣告p1是Person類
+
+//   print(p1.name); // 用p1物件導向到name
+//   p1.setInfo(18); // 用p1物件導向到setInfo類
+//   p1.getInfo(); // 用p1物件導向到getInfo類
+// }
+
+// class Person {
+//   String name = 'Ethan';
+//   int age = 18;
+
+//   void getInfo() {
+//     print("${this.name}-----${this.age}");
+//   }
+
+//   void setInfo(int age) {
+//     this.age = age;
+//   }
+// }
+
+// void main() {
+//   Person p1 = new Person();
+
+//   print(p1.name);
+//   print(p1.age);
+//   p1.setInfo(28);
+//   p1.getInfo();
+// }
+
+// class Person {
+//   String name = 'Ethan';
+//   int age = 19;
+//   // 默認構造函式
+//   Person() {
+//     print('這是構造函式裡面的內容 這個方法在實例化的時候觸發');
+//   }
+//   void printInfo() {
+//     print("${this.name}----${this.age}");
+//   }
+// }
+
 class Person {
-  String name = '張三';
-  int age = 20;
-
-  void getInfo() {  // 宣告輸出名字年齡的類
-    // print("$name----$age"); 類裡不推薦用這個
-    print("${this.name}----${this.age}"); // 要加大括號不然輸出會沒有類型
-  }
-
-  void setInfo(age) { // 宣告換年齡的類
+  String? name;
+  int? age;
+  // 默認構造函式
+  Person(String name, int age) {
+    this.name = name;
     this.age = age;
+  }
+  void printInfo() {
+    print("${this.name}----${this.age}");
   }
 }
 
 void main() {
-/* 不推薦這樣寫 */
-  // var p1 = new Person();
+  Person p1 = new Person('Ethan',19);
 
-  // print(p1.name); // 張三
-  // print(p1.age);  // 20
-  // p1.getInfo(); // 張三----20
+  p1.printInfo(); // Ethan----19
 
-/* 推薦這樣寫 */
-  Person p1 = new Person(); // 宣告p1是Person類
+  Person p2 = new Person('Lilly',17);
 
-  print(p1.name); // 用p1物件導向到name
-  p1.setInfo(18); // 用p1物件導向到setInfo類
-  p1.getInfo(); // 用p1物件導向到getInfo類
+  p2.printInfo(); // Lilly----17
 }

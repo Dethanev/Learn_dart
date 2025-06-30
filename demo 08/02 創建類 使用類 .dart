@@ -16,7 +16,7 @@ Dart 是一門使用類和單繼承的面向物件語言 所有的物件都是�
   → 可呼叫類裡的方法
 */
 
-class Person {
+class Person {  // 自創類沒有小括號
   String name = '張三'; // 屬性
   int age = 20; // 屬性
 
