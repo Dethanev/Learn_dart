@@ -90,10 +90,9 @@ const double atm = 1.01325 * bar;
 
 ## 5️⃣ Dart 保留字表格
 
-| 保留字      | 保留字    | 保留字 | 保留字    | 保留字     | 保留字  | 保留字  | 保留字  |
-| -------- | ------ | --- | ------ | ------- | ---- | ---- | ---- |
-| assert   | enum   | in  | import | library | part | show | hide |
-| operator | export |     |        |         |      |      |      |
+| 保留字    | 保留字  | 保留字 | 保留字    | 保留字     | 保留字  | 保留字  | 保留字  | 保留字      | 保留字    |
+| ------ | ---- | --- | ------ | ------- | ---- | ---- | ---- | -------- | ------ |
+| assert | enum | in  | import | library | part | show | hide | operator | export |
 
 ---
 
