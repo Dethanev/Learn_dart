@@ -73,7 +73,7 @@ const double atm = 1.01325 * bar;
 
 ---
 
-## 4️⃣ Dart 關鍵字表格（8 格寬）
+## 4️⃣ Dart 關鍵字表格
 
 | abstract  | else     | import   | show    | as      | enum    | in      | static |
 | assert    | export   | interface| super   | async   | extends | is      | switch |
@@ -87,8 +87,8 @@ const double atm = 1.01325 * bar;
 ---
 
 ## 5️⃣ Dart 保留字表格
-
 | assert | enum | in | import | library | part | show | hide | operator | export |
+
 ---
 
 ## 🧠 小提醒
