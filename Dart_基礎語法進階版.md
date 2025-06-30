@@ -76,20 +76,21 @@ const double atm = 1.01325 * bar;
 ## 4️⃣ Dart 關鍵字表格
 
 | abstract  | else     | import   | show    | as      | enum    | in      | static |
+|-----------|----------|----------|---------|---------|---------|---------|--------|
 | assert    | export   | interface| super   | async   | extends | is      | switch |
 | await     | external | library  | sync    | break   | factory | mixin   | this   |
 | case      | false    | new      | throw   | catch   | final   | null    | true   |
-| class     | finally  | on       | try     | const   | for     | operator| typedef|
-| continue  | Function | part     | var     |covariant| get     | required| void   |
-| default   | hide     | rethrow  | while   | deferred| if      | return  | with   |
-| do        | implements| set     | yield   |         |         |         |        |
+| class     | finally  | on       | try     | const   | for     | operator| typedef |
+| continue  | Function | part     | var     | covariant | get   | required| void   |
+| default   | hide     | rethrow  | while   | deferred | if    | return  | with   |
+| do        | implements| set     | yield   |         |      |         |      |
 
 ---
 
 ## 5️⃣ Dart 保留字表格
 
 | assert | enum | in | import | library | part | show | hide | operator | export |
-
+|---------|------|----|--------|---------|------|------|------|----------|--------|
 ---
 
 ## 🧠 小提醒
