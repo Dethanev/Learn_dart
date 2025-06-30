@@ -1121,25 +1121,32 @@
 //   }
 // }
 
-class Person {
-  String? name;
-  int? age;
-  // 默認構造函式
-  Person(String name, int age) {
-    this.name = name;
-    this.age = age;
-  }
-  void printInfo() {
-    print("${this.name}----${this.age}");
-  }
-}
+// class Person {
+//   String? name;
+//   int? age;
+//   // 默認構造函式
+//   Person(String name, int age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   void printInfo() {
+//     print("${this.name}----${this.age}");
+//   }
+// }
+
+// void main() {
+//   Person p1 = new Person('Ethan',19);
+
+//   p1.printInfo(); // Ethan----19
+
+//   Person p2 = new Person('Lilly',17);
+
+//   p2.printInfo(); // Lilly----17
+// }
 
 void main() {
-  Person p1 = new Person('Ethan',19);
-
-  p1.printInfo(); // Ethan----19
-
-  Person p2 = new Person('Lilly',17);
-
-  p2.printInfo(); // Lilly----17
+  print('晚');
+  for (int i = 1; i <= 28; i++) {
+    print('安');
+  }
 }
