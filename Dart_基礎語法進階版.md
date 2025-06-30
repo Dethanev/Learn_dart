@@ -53,7 +53,7 @@ const double atm = 1.01325 * bar;
 ### 應用場景
 
 - UI 固定字串 → 用 `const`
-- 程式執行後才確定的資料 → 用 `final`
+- 執行期才知道的值 → 用 `final`
 
 ---
 
@@ -73,48 +73,52 @@ const double atm = 1.01325 * bar;
 
 ---
 
-## 4️⃣ 關鍵字與保留字
+## 4️⃣ Dart 關鍵字表格（寬版排列）
 
-### 關鍵字（常用）
-
-```dart
-if, else, for, while, do, switch, case, continue, break, return, true, false, null, var, final, const, dynamic, void, this, super, try, catch, throw, class, extends, implements, new, async, await, yield
-```
-
-### 保留字（預留給未來）
-
-```dart
-assert, enum, in, import, library, part, show, hide, operator, export 等
-```
-
----
-
-## 5️⃣ 主函式（main 函式）
-
-- Dart 程式從 `main()` 開始執行
-- `void` 表示不回傳值
-- 每條語句以分號結尾
-
-```dart
-void main() {
-  print("Hello World!");
-}
-```
-
-> **輸出結果：**
-> Hello World!
+| 關鍵字    | 中文補充      | 關鍵字    | 中文補充    | 關鍵字    | 中文補充    | 關鍵字    | 中文補充    |
+|-----------|-----------|-----------|--------|-----------|--------|-----------|--------|
+| abstract  | 抽象類別定義 | else    | 否則   | import  | 匯入檔案 | show   | 匯入顯示限定 |
+| as        | 型別轉換    | enum    | 列舉   | in     | 在…中 | static | 靜態方法 |
+| assert    | 斷言檢查    | export | 匯出檔案 | interface | 介面 | super  | 父類引用 |
+| async     | 非同步標記 | extends | 繼承   | is     | 型別判斷 | switch | 多分支選擇 |
+| await     | 等待非同步 | external | 外部函式 | library | 庫定義 | sync   | 同步標記 |
+| break     | 跳出迴圈    | factory | 工廠構造 | mixin  | 混入 | this   | 當前物件 |
+| case      | 分支選項    | false  | 布林假 | new    | 新建物件 | throw  | 丟出錯誤 |
+| catch     | 捕捉錯誤    | final  | 執行時常量 | null   | 空值 | true   | 布林真 |
+| class     | 類別定義    | finally | 最終執行 | on     | 錯誤處理 | try    | 嘗試塊 |
+| const     | 編譯時常量 | for    | 迴圈   | operator | 運算子重載 | typedef | 型別定義 |
+| continue  | 繼續下一次 | Function | 函式型別 | part   | 分部檔案 | var    | 自動型別 |
+| covariant | 協變修飾符 | get    | getter屬性 | required | 必填參數 | void   | 無返回值 |
+| default   | 預設值      | hide   | 匯入排除 | rethrow | 重拋錯誤 | while | 當…時執行 |
+| deferred  | 延遲載入    | if     | 如果   | return | 返回值 | with   | 混入 |
+| do        | 先執行判斷 | implements | 實作介面 | set    | setter屬性 | yield  | 產出值 |
 
 ---
 
-## 🧠 進階小提醒
+## 5️⃣ Dart 保留字表格
 
-- Dart 編譯器有強型別檢查，即使使用 `var`，也會在第一次賦值後推斷出固定型別
-- `const` 宣告的物件在記憶體中可重用（canonicalized object），效能更高
-- 變量命名要語意清晰，方便團隊協作
+| 保留字  | 中文補充    |
+|-----------|-----------|
+| assert    | 斷言       |
+| enum      | 列舉       |
+| in        | 在…中     |
+| import    | 匯入檔案 |
+| library   | 庫定義   |
+| part      | 分部檔案 |
+| show      | 匯入顯示限定 |
+| hide      | 匯入排除 |
+| operator  | 運算子重載 |
+| export    | 匯出檔案 |
+
+---
+
+## 🧠 小提醒
+
+- Dart 所有型別皆繼承自 `Object`
+- 不允許使用這些關鍵字與保留字當作變量或函式名稱
 
 ---
 
 ### 💬 結論
 
-> 「理解 Dart 型別和常量概念是寫安全、穩定程式的第一步，後續結合函式、OOP，能大幅提升程式品質。」
-
+> 「寬表格多列版，視覺更整齊，背誦更快，Dart 基礎語法一次吸收！」
