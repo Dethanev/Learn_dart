@@ -1073,18 +1073,18 @@
 
 // void main() {
 // /* 不推薦這樣寫 */
-//   // var p1 = new Person();
+//   // var r = new Person();
 
-//   // print(p1.name); // 張三
-//   // print(p1.age);  // 20
-//   // p1.getInfo(); // 張三----20
+//   // print(r.name); // 張三
+//   // print(r.age);  // 20
+//   // r.getInfo(); // 張三----20
 
 // /* 推薦這樣寫 */
-//   Person p1 = new Person(); // 宣告p1是Person類
+//   Person r = new Person(); // 宣告r是Person類
 
-//   print(p1.name); // 用p1物件導向到name
-//   p1.setInfo(18); // 用p1物件導向到setInfo類
-//   p1.getInfo(); // 用p1物件導向到getInfo類
+//   print(r.name); // 用r物件導向到name
+//   r.setInfo(18); // 用r物件導向到setInfo類
+//   r.getInfo(); // 用r物件導向到getInfo類
 // }
 
 // class Person {
@@ -1101,12 +1101,12 @@
 // }
 
 // void main() {
-//   Person p1 = new Person();
+//   Person r = new Person();
 
-//   print(p1.name);
-//   print(p1.age);
-//   p1.setInfo(28);
-//   p1.getInfo();
+//   print(r.name);
+//   print(r.age);
+//   r.setInfo(28);
+//   r.getInfo();
 // }
 
 // class Person {
@@ -1135,18 +1135,119 @@
 // }
 
 // void main() {
-//   Person p1 = new Person('Ethan',19);
+//   Person r = new Person('Ethan',19);
 
-//   p1.printInfo(); // Ethan----19
+//   r.printInfo(); // Ethan----19
 
 //   Person p2 = new Person('Lilly',17);
 
 //   p2.printInfo(); // Lilly----17
 // }
 
-void main() {
-  print('晚');
-  for (int i = 1; i <= 28; i++) {
-    print('安');
+// class Person {
+//   String name = 'Ethan';
+//   int age = 19;
+
+//   Person();
+
+//   Person.now() {
+//     print('Hello World!');
+//   }
+
+//   Person.setInfo(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   void printInfo() {
+//     print("${this.name}----${this.age}");
+//   }
+// }
+
+// void main() {
+//   Person r = new Person();
+//   r.printInfo();
+// }
+
+// class Rect {
+//   num? height;
+//   num? width;
+
+//   Rect(this.height, this.width);
+
+//   num? area() {
+//     if (height == null || width == null) return 0;
+//     return height! * width!;
+//   }
+
+//   void getInfo() {
+//     print(area());
+//   }
+// }
+
+// void main() {
+//   Rect r = new Rect(10, 20);
+
+//   print("面積:${r.area()}");
+// }
+
+/* getter */
+// class Rect {
+//   num? height;
+//   num? width;
+
+//   Rect(this.height, this.width);
+
+//   get area{ // 用get關鍵字就不用加小括號
+//     if (height == null || width == null) return 0;
+//     return height! * width!;
+//   }
+// }
+// void main() {
+//   Rect r = new Rect(10, 2);
+
+//   print("面積:${r.area}");  // 面積:20  // 注意調用直接通過訪問屬性的方式訪問area
+// }
+
+// /* setter */
+
+// class Rect {
+//   num? height;
+//   num? width;
+
+//   Rect(this.height, this.width);
+
+//   get area {
+//     if (height == null || width == null) return 0;
+//     return height! * width!;
+//   }
+
+//   set areaHight(value) {
+//     this.height = value;
+//   }
+// }
+
+// void main() {
+//   Rect r = new Rect(10, 20);
+
+//   print("面積:${r.area}");
+
+//   r.areaHight=6;
+
+//   print("面積:${r.area}");
+// }
+
+class Rect {
+  num height;
+  num width;
+
+  Rect(this.height, this.width);
+
+  get area {
+    return height * width;
   }
 }
+
+  void main() {
+    Rect r = new Rect(10, 20);
+    print(r.area);
+  }
