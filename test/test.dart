@@ -273,7 +273,7 @@
 // print(str is String);
 
 // isEmpty:判斷字符串是否為空
-// String name = "Ethan";
+// String name = "Lilly";
 
 // if (name.isEmpty) {
 //   //如果name為空就執行
@@ -606,24 +606,24 @@
 //   }
 // }
 
-// List myList = ["Ethan", 'Chris', "LY"];
+// List myList = ["Lilly", 'Chris', "LY"];
 
-// print(myList); // [Ethan, Chris, LY]
+// print(myList); // [Lilly, Chris, LY]
 // /* length isEmpty isNotEmpty */
 // print(myList.length); // 3
 // print(myList.isEmpty); // false
 // print(myList.isNotEmpty); // true
 // /* reversed */
-// print(myList.reversed); // (LY, Chris, Ethan) 對列表進行倒敘排序
+// print(myList.reversed); // (LY, Chris, Lilly) 對列表進行倒敘排序
 // /*
 // reversed 回傳的是 Iterable，不是 List 所以輸出才不是 中括號
 // Iterable = 可看、可走訪，但不能直接改裡面的資料 現在初學知道這樣就好
 // */
 // List newMyList = myList.toList(); // Iterable 轉回 List 就可以修改
-// print(newMyList); // [Ethan, Chris, LY]
+// print(newMyList); // [Lilly, Chris, LY]
 
 /* List 裡面常用的方法 */
-// List myList = ["Ethan", 'Chris', "LY"];
+// List myList = ["Lilly", 'Chris', "LY"];
 // /* add addAll*/
 // myList.add("釋迦"); // 增加資料 只能增加一個
 // myList.addAll(["芒果", "草莓"]); // 拼接到數組(陣列)裡 所以要用中括號
@@ -636,7 +636,7 @@
 
 // print(myList); // 開啟這裡測試
 
-// List myList = ["Ethan", 'Chris', "LY"];
+// List myList = ["Lilly", 'Chris', "LY"];
 // /* fillRange */
 // myList.fillRange(0, 2, 'aaa'); // 修改多個數據 0是開始 2是結尾 所以改到 0 1而已 改的內容'aaa'
 // /* insert */
@@ -645,36 +645,36 @@
 // myList.insertAll(1, ['aaa','bbb']);  // 插入多個數據 在原本 Chris 的前面 插入'aaa' 和 'bbb'
 // print(myList); // 開啟這裡測試
 
-// List myList = ["Ethan", 'Chris', "LY"];
+// List myList = ["Lilly", 'Chris', "LY"];
 // /* join */
 // var str = myList.join('-'); //list 轉換成字符串
 
-// print(str); // Ethan-Chris-LY
+// print(str); // Lilly-Chris-LY
 // print(str is String); // true 是String類型 可以用String 宣告
 // /* split */
-// String str = "Ethan- Chris- LY";
+// String str = "Lilly- Chris- LY";
 // List list = str.split('-');
 
-// print(list); // [Ethan,  Chris,  LY]
+// print(list); // [Lilly,  Chris,  LY]
 // print(list is List); // true 是List類型 可以用List 宣告
 
 // var s = new Set();
 
-// s.add('Ethan');
+// s.add('Lilly');
 // s.add('Chris');
-// s.add('Ethan');
+// s.add('Lilly');
 
-// print(s); // {Ethan, Chris} 不會重複打印
+// print(s); // {Lilly, Chris} 不會重複打印
 
 /* Set 基本用法 */
 // var s = new Set();
 
-// s.add('Ethan');
+// s.add('Lilly');
 // s.add('Chris');
-// s.add('Ethan');
+// s.add('Lilly');
 
-// print(s); // {Ethan, Chris} 不會重複打印
-// print(s.toList());  // Set 變 List [Ethan, Chris] 沒有在一個'Ethan'是因為他只是單純轉換 Set 的s變數
+// print(s); // {Lilly, Chris} 不會重複打印
+// print(s.toList());  // Set 變 List [Lilly, Chris] 沒有在一個'Lilly'是因為他只是單純轉換 Set 的s變數
 /* 影片中教的刪除重複資訊做法 */
 // List myList = ['張三', '李四', '老五', '張三', '李四', '老五'];
 
@@ -886,7 +886,7 @@
 //   return "名字: $username----年齡: $age";
 // }
 
-// print(printUserInfo('Ethan', 18));
+// print(printUserInfo('Lilly', 18));
 
 /* 3. 定義一個可選參數的函式 */
 
@@ -897,7 +897,7 @@
 //   return "名字: $username----年齡:*"; // 都沒有就回傳這個
 // }
 
-// print(printUserInfo('Ethan'));  // 名字: Ethan----年齡:*
+// print(printUserInfo('Lilly'));  // 名字: Lilly----年齡:*
 
 /* 4. 定義一個默認參數的函式 */
 
@@ -908,9 +908,9 @@
 //   return "名字:$username--性別:$sex--年齡:*"; // 都沒有就回傳這個
 // }
 
-// print(printUserInfo('Ethan'));  // 名字:Ethan--性別:男--年齡:*
-// print(printUserInfo('Ethan','女'));  // 名字:Ethan--性別:女--年齡:*
-// print(printUserInfo('Ethan','女',30));  // 名字:Ethan--性別:女--年齡:30
+// print(printUserInfo('Lilly'));  // 名字:Lilly--性別:男--年齡:*
+// print(printUserInfo('Lilly','女'));  // 名字:Lilly--性別:女--年齡:*
+// print(printUserInfo('Lilly','女',30));  // 名字:Lilly--性別:女--年齡:30
 
 /* 5. 定義一個命名參數的函式 */
 
@@ -921,7 +921,7 @@
 //   return "名字:$username--性別:$sex--年齡:*"; // 都沒有就回傳這個
 // }
 
-// print(printUserInfo('Ethan',age:18,sex: '未知'));  // 名字:Ethan--性別:未知--年齡:18
+// print(printUserInfo('Lilly',age:18,sex: '未知'));  // 名字:Lilly--性別:未知--年齡:18
 
 /* 6. 實現一個 把方法當作參數的函式 */
 
@@ -1088,7 +1088,7 @@
 // }
 
 // class Person {
-//   String name = 'Ethan';
+//   String name = 'Lilly';
 //   int age = 18;
 
 //   void getInfo() {
@@ -1110,7 +1110,7 @@
 // }
 
 // class Person {
-//   String name = 'Ethan';
+//   String name = 'Lilly';
 //   int age = 19;
 //   // 默認構造函式
 //   Person() {
@@ -1135,9 +1135,9 @@
 // }
 
 // void main() {
-//   Person r = new Person('Ethan',19);
+//   Person r = new Person('Lilly',19);
 
-//   r.printInfo(); // Ethan----19
+//   r.printInfo(); // Lilly----19
 
 //   Person p2 = new Person('Lilly',17);
 
@@ -1145,7 +1145,7 @@
 // }
 
 // class Person {
-//   String name = 'Ethan';
+//   String name = 'Lilly';
 //   int age = 19;
 
 //   Person();
@@ -1236,18 +1236,172 @@
 //   print("面積:${r.area}");
 // }
 
-class Rect {
-  num height;
-  num width;
+// class Rect {
+//   num height;
+//   num width;
 
-  Rect(this.height, this.width);
+//   Rect(this.height, this.width);
 
-  get area {
-    return height * width;
+//   get area {
+//     return height * width;
+//   }
+// }
+
+// void main() {
+//   Rect r = new Rect(10, 20);
+//   print(r.area);
+// }
+
+// import 'lib/Person.dart';
+
+// class Person {
+//   static String name = '張三';
+//   int age = 19;
+
+//   static void show() {
+//     print(name);
+//   }
+
+//   void printInfo() {
+//     // 非靜態方法可以訪問 靜態成員 非靜態成員
+//     print(name); // 訪問靜態屬性
+//     print(age); // 訪問非靜態屬性
+//     show(); // 調用靜態方法
+//   }
+
+//   static void printUserInfo() {
+//     print(name); // 靜態屬性
+//     show(); // 靜態方法
+//     // print(age);  靜態方法無法訪問非靜態的屬性
+//     // printInfo();  靜態方法無法訪問非靜態的方法
+//   }
+// }
+
+// void main() {
+// print(Person.name);
+// Person.show();
+
+// Person p = Person();
+// p.printInfo();
+
+//   Person.printUserInfo();
+// }
+
+// class Person {
+//   String name;
+//   num age;
+
+//   Person(this.name, this.age);
+
+//   void printInfo() {
+//     print("${this.name} --- ${this.age}");
+//   }
+// }
+
+// void main() {
+// Person p = new Person('Lilly', 18);
+
+// if (p is Person) {  // p 是 Person 類型的物件
+//   p.name = '李四';
+// }
+// p.printInfo();
+
+// print(p is Object); // p的所有物件都是 Object 子類
+
+// var p1;
+
+// p1 = ' ';
+// p1 = new Person('張三1', 18);
+// // p1.printInfo();  不推
+// (p1 as Person).printInfo(); // 推
+
+//   Person p1 = new Person('張三', 19);
+
+// /* 一般 */
+//   // p1.name = "Lilly";
+//   // p1.age = 18;
+//   // p1.printInfo();
+// /* 更簡潔 */
+//   p1
+//     ..name = '李四' // 不用分號隔開
+//     ..age = 30
+//     ..printInfo();
+// }
+
+// class Person {
+//   String? name;
+//   num? age;
+
+//   Person(this.name, this.age);
+
+//   void printInfo() {
+//     print("${this.name} --- ${this.age}");
+//   }
+// }
+
+// class Web extends Person {
+//   String? sex;
+//   Web(String name, num age, String sex) : super(name, age) {
+//     this.sex = sex;
+//   }
+//   void run() {
+//     print("${this.name} --- ${this.age}---${this.sex}");
+//   }
+// }
+
+// void main() {
+//   // Person p = Person('Lilly', 19);
+//   // p.printInfo();
+
+//   // Person p1 = Person('Lilly', 17);
+//   // p1.printInfo();
+
+//   Web w = Web('Chris', 16, '男');
+
+//   w.printInfo(); // Chris --- 16
+//   w.run(); // Chris --- 16---男
+
+// }
+
+class Person {
+  String? name;
+  num? age;
+
+  Person(this.name, this.age);
+
+  void printInfo() {
+    print('${this.name}-----${this.age}');
+  }
+
+  void work() {
+    print('${this.name}在工作...');
   }
 }
 
-  void main() {
-    Rect r = new Rect(10, 20);
-    print(r.area);
+class Web extends Person {
+  Web(String name, num age) : super(name, age);
+
+  run() {
+    super.work(); // 自類調用父類的方法
   }
+  // 覆寫父類的方法
+  @override // 建議覆寫的前面加上@override
+  void printInfo() {
+    print('姓名:${this.name}-----年齡:${this.age}');
+  }
+
+  @override
+  void work() {
+    print('${this.name}在台積電工作');
+  }
+}
+
+void main() {
+  Web w = Web('Lilly', 19);
+
+  w.printInfo();  // 姓名:Lilly-----年齡:19
+
+  w.work(); // Lilly在台積電工作
+
+  w.run();  // Lilly在工作...
+}

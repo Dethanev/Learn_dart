@@ -17,6 +17,6 @@ class Rect {
 }
 
 void main() {
-  Rect r = new Rect();  // 2----10
+  Rect r = new Rect(); // 2----10
   print(r.getArea()); // 20
 }

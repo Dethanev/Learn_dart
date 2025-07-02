@@ -8,7 +8,7 @@ class Person {
     print('Hello World!');
   }
 
-  Person.setInfo(name, age) {
+  Person.setInfo(String name,int  age) {
     this.name = name;
     this.age = age;
   }
