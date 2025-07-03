@@ -1643,27 +1643,134 @@
 //   c.printB(); // 我是B
 // }
 
-mixin class A {
-  String info = "this is A";
-  void printA() {
-    print('A');
+// mixin class A {
+//   String info = "this is A";
+//   void printA() {
+//     print('A');
+//   }
+// }
+
+// mixin class B {
+//   void printB() {
+//     print('B');
+//   }
+// }
+
+// class C with A, B {
+
+// }
+
+// void main() {
+//   C c = C();
+
+//   print(c.info);  // this is A
+//   c.printA(); // A
+//   c.printB(); // B
+// }
+// 案例: 把下面類傳換成泛型類 要求MyList裡面可以增加int類型的數據 也可以增加String類型的數據 但是每次調用增加的類型要統一
+// class MyList<T> {
+//   List list = <T>[];
+//   void add<T>(value) {
+//     this.list.add(value);
+//   }
+
+//   List getList() {
+//     return list;
+//   }
+// }
+
+// void main() {
+//   // MyList l1 = MyList();
+//   // l1.add(1);
+//   // l1.add(12);
+//   // l1.add(5);
+//   // print(l1.getList()); // [1, 12, 5]
+
+//   // MyList l2 = MyList<String>();
+//   // l2.add('Ethan');
+//   // // // l.add(12); 會報錯
+//   // print(l2.getList()); // [Ethan]
+
+//   MyList l3 = MyList<int >();
+//   l3.add(11);
+//   l3.add(12);
+//   // l3.add('aaa'); 會報錯
+//   print(l3.getList()); // [11, 12]
+
+//   // List list = List.filled(2, ' ');
+//   // list[0] = '張三';
+//   // list[1] = '李四';
+//   // print(list);
+
+//   // List list = new List.filled(2, ' ');
+//   // list[0] = '張三1';
+//   // list[1] = '李四';
+//   // print(list);
+
+//   // List list = new List<String>.filled(2, ' ');
+//   // list[0] = '張三';
+//   // list[1] = '李四';
+//   // print(list);
+
+//   // List list = new List<int>.filled(2, 1);
+//   // list[0] = 19;
+//   // // list[1] = '李四'; // 報錯
+//   // print(list);
+// }
+
+// abstract class ObjectCache {
+//   getByKey(String key);
+//   void setByKey(String key, Object value);
+// }
+
+// abstract class StringCache {
+//   getByKey(String key);
+//   void setByKey(String key, Object value);
+// }
+
+// abstract class Cache <T>{
+//   getByKey<T>(key);
+//   void setByKey<T>( key,  value);
+// }
+
+abstract class Cache<T> {
+  getByKey(String key);
+  void setByKey(String key, T value); // T類型在括號裡就不用加<>
+}
+
+class FileCache<T> implements Cache<T> {
+  @override
+  getByKey(String key) {
+    throw UnimplementedError();
+  }
+
+  @override
+  void setByKey(String key,T value) {
+    print('我是文件緩存 把Key=${key} value=${value}的數據寫入到了文件中');
   }
 }
 
-mixin class B {
-  void printB() {
-    print('B');
+class MemoryCache<T> implements Cache<T>{
+  @override
+  getByKey(String key) {
+    throw UnimplementedError();
   }
-}
 
-class C with A, B {
+  @override
+  void setByKey(String key, T value) {
+    print('我是內存緩存 把Key=${key} value=${value}的數據寫入到了內存中');
+  }
 
 }
 
 void main() {
-  C c = C();
 
-  print(c.info);  // this is A
-  c.printA(); // A
-  c.printB(); // B
+  MemoryCache M1 = MemoryCache<String>();
+  // M.setByKey('index', 789); 會報錯
+  M1.setByKey('index', '首頁數據');
+
+  MemoryCache M2 = MemoryCache<Map>();
+  // M.setByKey('index', '首頁數據'); 會報錯
+  M2.setByKey('index', {'name':'Ethan',"age":20});
+
 }
