@@ -1363,45 +1363,307 @@
 
 // }
 
-class Person {
-  String? name;
-  num? age;
+// class Person {
+//   String? name;
+//   num? age;
 
-  Person(this.name, this.age);
+//   Person(this.name, this.age);
 
-  void printInfo() {
-    print('${this.name}-----${this.age}');
-  }
+//   void printInfo() {
+//     print('${this.name}-----${this.age}');
+//   }
 
-  void work() {
-    print('${this.name}在工作...');
+//   void work() {
+//     print('${this.name}在工作...');
+//   }
+// }
+
+// class Web extends Person {
+//   Web(String name, num age) : super(name, age);
+
+//   run() {
+//     super.work(); // 自類調用父類的方法
+//   }
+//   // 覆寫父類的方法
+//   @override // 建議覆寫的前面加上@override
+//   void printInfo() {
+//     print('姓名:${this.name}-----年齡:${this.age}');
+//   }
+
+//   @override
+//   void work() {
+//     print('${this.name}在台積電工作');
+//   }
+// }
+
+// void main() {
+//   Web w = Web('Lilly', 19);
+
+//   w.printInfo();  // 姓名:Lilly-----年齡:19
+
+//   w.work(); // Lilly在台積電工作
+
+//   w.run();  // Lilly在工作...
+// }
+
+// class Person {
+//   String? name;
+//   String? work;
+//   num? age;
+
+//   Person(this.name, this.work, this.age);
+
+//   static int play(value) {
+//     return value * value;
+//   }
+
+//   void printWork() {
+//     print('${this.name}在${this.work}上班');
+//   }
+
+//   void printInfo() {
+//     print('${this.name}今年${this.age}歲');
+//   }
+// }
+
+// class Web extends Person {
+//   Web(String name, num age, String work) : super(name, work, age);
+
+//   static void run() {
+//     print('run');
+//   }
+
+//   @override
+//   void printWork() {
+//     print('在${this.work}上班的${this.name}');
+//   }
+
+//   @override
+//   void printInfo() {
+//     print('今年${this.age}歲的${this.name}');
+//   }
+// }
+
+// void main() {
+//   print('--------Person---------');
+//   Person p1 = Person('Ethan', 'Google', 19);
+
+//   p1.printInfo();
+//   p1.printWork();
+//   print(Person.play(10));
+
+//   print('--------Person---------');
+//   print('--------Web------------');
+
+//   Web w = Web('Lilly', 18, 'Apple');
+
+//   w.printInfo();
+//   w.printWork();
+//   Web.run();
+// }
+
+// abstract class Animal {
+//   void eat(); // 抽象方法
+//   void run(); // 抽象方法
+
+//   void printInfo() {
+//     print("我是一個抽象類");
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void eat() {
+//     print('狗在啃骨頭');
+//   }
+
+//   @override
+//   void run() {
+//     print('狗在跑');
+//   }
+// }
+
+// class Cat extends Animal {
+//   @override
+//   void eat() {
+//     print('貓在吃魚');
+//   }
+
+//   @override
+//   void run() {
+//     print('貓在跑');
+//   }
+// }
+
+// void main() {
+//   Dog d = Dog();
+//   d.eat(); // 狗在啃骨頭
+//   d.run(); // 狗在跑
+//   d.printInfo(); // 我是一個抽象類
+
+//   Cat c = Cat();
+//   c.eat(); // 貓在吃魚
+//   c.run(); // 貓在跑
+//   c.printInfo(); // 我是一個抽象類
+
+//   // Animal a = Animal(); 抽象類不能實例化
+// }
+
+// abstract class Animal {
+//   void eat(); // 抽象方法
+// }
+
+// class Animal {
+//   void run() {
+//     print('跑');
+//   }
+
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void eat() {
+//     print('狗在啃骨頭');
+//   }
+
+//   void run() {
+//     print('run');
+//   }
+// }
+
+// class Cat extends Animal {
+//   @override
+//   void eat() {
+//     print('貓在吃魚');
+//   }
+
+//   void run() {
+//     print('run');
+//   }
+// }
+
+// void main() {
+//   // Dog d = Dog();
+//   // d.eat(); // 狗在啃骨頭
+//   // d.run();
+
+//   Animal d = Dog();
+//   d.eat(); // 狗在啃骨頭
+
+//   Animal c = Cat();
+//   c.eat(); // 貓在吃魚
+
+//   // Cat c = Cat();
+//   // c.eat(); // 貓在吃魚
+// }
+
+// abstract class Db { // 當作接口  接口: 約定 規範
+//   String? uri;      // 數據庫的連接地址
+//   add(String data);
+//   save();
+//   delete();
+// }
+
+// class Mysql implements Db {
+//   @override
+//   String? uri;
+
+//   Mysql(this.uri);
+
+//   @override
+//   add(data) {
+//     print('這是mysql的add方法' + data);
+//   }
+
+//   @override
+//   delete() {
+//     throw UnimplementedError();
+//   }
+
+//   @override
+//   save() {
+//     throw UnimplementedError();
+//   }
+// }
+
+// class mssql implements Db {
+//   @override
+//   String? uri;
+
+//   @override
+//   add(data) {
+//     print('這是mssql的add方法' + data);
+//   }
+
+//   @override
+//   delete() {
+//     throw UnimplementedError();
+//   }
+
+//   @override
+//   save() {
+//     throw UnimplementedError();
+//   }
+// }
+
+// void main() {
+//   Mysql mysql = Mysql('xxxxxx');
+//   mysql.add('123');
+// }
+
+// abstract class A {
+//   String? name;
+//   void printA();
+// }
+
+// abstract class B {
+//   String? name;
+//   void printB();
+// }
+
+// /* 實現多個接口 */
+// class C implements A, B {
+//   @override
+//   String? name;
+
+//   @override
+//   void printA() {
+//     print('我是A');
+//   }
+
+//   @override
+//   void printB() {
+//     print('我是B');
+//   }
+// }
+
+// void main() {
+//   C c = C();
+//   c.printA(); // 我是A
+//   c.printB(); // 我是B
+// }
+
+mixin class A {
+  String info = "this is A";
+  void printA() {
+    print('A');
   }
 }
 
-class Web extends Person {
-  Web(String name, num age) : super(name, age);
+mixin class B {
+  void printB() {
+    print('B');
+  }
+}
 
-  run() {
-    super.work(); // 自類調用父類的方法
-  }
-  // 覆寫父類的方法
-  @override // 建議覆寫的前面加上@override
-  void printInfo() {
-    print('姓名:${this.name}-----年齡:${this.age}');
-  }
+class C with A, B {
 
-  @override
-  void work() {
-    print('${this.name}在台積電工作');
-  }
 }
 
 void main() {
-  Web w = Web('Lilly', 19);
+  C c = C();
 
-  w.printInfo();  // 姓名:Lilly-----年齡:19
-
-  w.work(); // Lilly在台積電工作
-
-  w.run();  // Lilly在工作...
+  print(c.info);  // this is A
+  c.printA(); // A
+  c.printB(); // B
 }
