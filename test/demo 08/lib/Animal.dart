@@ -1,5 +1,5 @@
 class Animal {
-  String? _name;
+  String? _name; // 私有屬性
   int? age;
 
   // 預設構造函式（建構子）的簡寫寫法

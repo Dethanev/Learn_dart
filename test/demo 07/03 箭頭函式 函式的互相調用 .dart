@@ -2,17 +2,17 @@ void main(){
 
 /* 需求: 使用forEach打印下面List裡面的數據 */
   /* 一般函式 */
-    // List box = ['香蕉', '蘋果', '芭樂'];
+    List box = ['香蕉', '蘋果', '芭樂'];
 
-    // box.forEach((value) {
-    //   print(value);
-    // });
-    // print(''); // 換行
+    box.forEach((value) {
+      print(value);
+    });
+    print(''); // 換行
   /* 高效率簡潔的箭頭函式 */
-    // box.forEach((value) =>print(value)); // 單一行一個動作就可以用 => 1.還有一行的話 就不用大括號括起來 2.print後面就不用加;分號
+    box.forEach((value) =>print(value)); // 單一行一個動作就可以用 => 1.還有一行的話 就不用大括號括起來 2.print後面就不用加;分號
 
     // box.forEach((value) => { // 不能用 因為這裡的大括號會判定為Set集合
-    //   print(value)
+    //   print(value);
     // });
 
 /* 需求: 修改下面List裡面的數據 讓數組大於2的值乘以2 */

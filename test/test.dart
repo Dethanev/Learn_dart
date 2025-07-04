@@ -1733,44 +1733,211 @@
 //   void setByKey<T>( key,  value);
 // }
 
-abstract class Cache<T> {
-  getByKey(String key);
-  void setByKey(String key, T value); // T類型在括號裡就不用加<>
-}
+// abstract class Cache<T> {
+//   getByKey(String key);
+//   void setByKey(String key, T value); // T類型在括號裡就不用加<>
+// }
 
-class FileCache<T> implements Cache<T> {
-  @override
-  getByKey(String key) {
-    throw UnimplementedError();
-  }
+// class FileCache<T> implements Cache<T> {
+//   @override
+//   getByKey(String key) {
+//     throw UnimplementedError();
+//   }
 
-  @override
-  void setByKey(String key,T value) {
-    print('我是文件緩存 把Key=${key} value=${value}的數據寫入到了文件中');
-  }
-}
+//   @override
+//   void setByKey(String key,T value) {
+//     print('我是文件緩存 把Key=${key} value=${value}的數據寫入到了文件中');
+//   }
+// }
 
-class MemoryCache<T> implements Cache<T>{
-  @override
-  getByKey(String key) {
-    throw UnimplementedError();
-  }
+// class MemoryCache<T> implements Cache<T>{
+//   @override
+//   getByKey(String key) {
+//     throw UnimplementedError();
+//   }
 
-  @override
-  void setByKey(String key, T value) {
-    print('我是內存緩存 把Key=${key} value=${value}的數據寫入到了內存中');
-  }
+//   @override
+//   void setByKey(String key, T value) {
+//     print('我是內存緩存 把Key=${key} value=${value}的數據寫入到了內存中');
+//   }
 
-}
+// }
+
+// void main() {
+
+//   MemoryCache M1 = MemoryCache<String>();
+//   // M.setByKey('index', 789); 會報錯
+//   M1.setByKey('index', '首頁數據');
+
+//   MemoryCache M2 = MemoryCache<Map>();
+//   // M.setByKey('index', '首頁數據'); 會報錯
+//   M2.setByKey('index', {'name':'Ethan',"age":20});
+
+// }
+
+/*
+Dart 中的泛型接口：
+
+  實現數據緩存的功能：有文件緩存，和內存緩存。內存緩存和文件緩存按照接口約束實現。
+
+  1、定義一個泛型接口，約束實現它的子類必須有 getByKey(key) 和 setByKey(key, value)
+
+  2、要求 setByKey 的時候的 value 的類型和實例化子類的時候指定的類型一致
+*/
+
+// abstract class Cache<T> {
+//   getByKey(String key);
+//   setByKey(String key, T value);
+// }
+
+// class FileCache<T> implements Cache<T> {
+//   @override
+//   getByKey(String key) {
+//     throw UnimplementedError();
+//   }
+
+//   @override
+//   setByKey(String key, T value) {
+//     print('我是文件內存Key:$key value:$value的資料');
+//   }
+// }
+
+// class MemoryCache<T> implements Cache<T> {
+//   @override
+//   getByKey(String key) {
+//     throw UnimplementedError();
+//   }
+
+//   @override
+//   setByKey(String key, T value) {
+//     print('我是文件內存Key:$key value:$value的資料');
+//   }
+// }
+
+// void main() {
+//   FileCache F = FileCache<String>();
+//   F.setByKey('123', '456');
+
+//   MemoryCache M = MemoryCache<Map>();
+//   M.setByKey('456', {'name':'Ethan','age':19});
+// }
+
+// import 'dart:io';
+// import 'dart:math';
+
+// main() {
+//   print(min(12, 23));
+//   print(max(12, 23));
+// }
+
+// import 'dart:io';
+// import 'dart:convert';
+
+// void main(){
+
+// }
+
+// String? getData(apiUrl) {
+//   if (apiUrl != null) {
+//     return 'this is server data';
+//   }
+//   return null;
+// }
+
+// void printLength(String? str) {
+//   print(str!.length);
+// }
+
+// void main() {
+// /* ?可空類型 */
+//   /* int  */
+
+//   // int a = 123;
+//   // print(a);
+
+//   // int x = 123; // 非空的int類型
+//   // x = null; // 所以不能用空類型
+
+//   int? a = 123; // int? 表示是一個可空類型
+//   a = null; // 給a賦空
+//   print(a); // null
+
+//   /* String */
+
+//   // String username = "張三";
+//   // print(username);
+
+//   // String username = '張三'; // 非空String類型
+//   // username = null; // 所以不能用空類型
+
+//   String? username = '張三'; // String? 表示username是一個可空類型
+//   username = null; // 給username賦空
+//   print(username); // null
+
+//   /* List */
+
+//   // List<String> li = ['張三', '李四', '老五'];
+//   // print(li);
+
+//   // List<String> li = ['張三', '李四', '老五']; // 非空List類型
+//   // li = null; // 所以不能用空類型
+
+//   List<String>? li = ['張三', '李四', '老五']; // List? 表示li是一個可空類型
+//   li = null; // 給li賦空
+//   print(li); // null
+
+//   /* 調用方法 */
+//   print(getData("http://www.itying.com")); // this is server data
+//   print(getData(null)); // null
+
+// /* ! 類型斷言 */
+
+//   // String? str = "this is str";
+//   // str = null;
+//   // print(str!.length); // 類型斷言: 如果str不等於null 會打印str的長度 , 如果等於null會出現異常
+
+//   printLength('http'); // 4
+//   printLength(null); // 報錯
+// }
+
+// class Person {
+//   late String name;
+//   late int age;
+
+//   void setName(String name, int age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   String getName() {
+//     return '${this.name}------${this.age}';
+//   }
+// }
+
+// void main() {
+//   Person p = Person();
+//   p.setName('Ethan', 19);
+//   print(p.getName());
+// }
 
 void main() {
+/* const 常量 */
+  const PI = 3.14;
+  // PI = 3.1415926; 不行
+  print(PI);
 
-  MemoryCache M1 = MemoryCache<String>();
-  // M.setByKey('index', 789); 會報錯
-  M1.setByKey('index', '首頁數據');
+/* final 常量 */
+  final Pi = 3.14;
+  // PI = 3.1415926; 不行
+  print(Pi);
 
-  MemoryCache M2 = MemoryCache<Map>();
-  // M.setByKey('index', '首頁數據'); 會報錯
-  M2.setByKey('index', {'name':'Ethan',"age":20});
+/* final 和 const 區別: final 可以開始不賦值 只能賦一次 ，而final 不僅有const的編譯時常 */
 
+  final a;
+  a = 13; // 只能賦值一次
+  //a=14; 不能賦值第二次
+  print(a);
+
+  final d = DateTime.now(); // 2025-07-04 19:36:27.987462
+  print(d);
 }
