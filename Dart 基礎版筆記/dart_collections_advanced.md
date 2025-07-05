@@ -84,7 +84,7 @@ print(myList);
 ```
 ['香蕉','蘋果','芭樂','釋迦','芒果','草莓']
 ```
-
+---
 ### indexOf(查找)
 ```dart
 List myList = ["Ethan", 'Chris', "Lily"];
@@ -99,7 +99,7 @@ print(myList);
 2
 -1
 ```
-
+---
 ### 刪除: remove(傳入實際值)、removeAt(傳入索引值)
 ```dart
 List myList = ["Ethan", "Chris", "Lily"];
@@ -113,7 +113,7 @@ print(myList);
 ```
 [Ethan]
 ```
-
+---
 ### fillRange(修改)
 ```dart
 List myList = ["Ethan", 'Chris', "Lily"];
@@ -126,7 +126,7 @@ print(myList);
 ```
 [aaa,aaa,Lily]
 ```
-
+---
 ### 插入: insert(單個)、insertAll(多個)
 ```dart
 List myList = ["Ethan", 'Chris', "Lily"];
@@ -140,7 +140,7 @@ print(myList);
 ```
 [aaa, bbb, Ethan, aaa, Chris, Lily]
 ```
-
+---
 ### join(字串轉換:List轉換成字串)
 ```dart
 List myList = ["Ethan", 'Chris', "Lily"];
@@ -155,6 +155,7 @@ print(str is String); // 是String類型 可以用String 宣告
 Ethan-Chris-Lily
 true
 ```
+---
 ### split(字串轉換:字串轉換成List)
 ```dart
 String str = "Ethan- Chris- Lily";
@@ -185,7 +186,7 @@ print(setNoDup);
 ```
 {1, 2, 3}
 ```
-
+---
 ### 集合運算（聯集）
 
 ```dart
@@ -199,7 +200,7 @@ print(setA.union(setB)); // 聯集
 ```
 {1, 2, 3, 4, 5, 6}
 ```
-
+---
 ### 集合運算（交集）
 ```dart
 print(setA.intersection(setB)); // 交集
@@ -209,7 +210,7 @@ print(setA.intersection(setB)); // 交集
 ```
 {3, 4}
 ```
-
+---
 ### 集合運算（差集）
 ```dart
 print(setA.difference(setB)); // 差集（A - B）
@@ -240,7 +241,7 @@ print(person);
 ```
 {name: Ethan, age: 19}
 ```
-
+---
 ### 合併
 ```dart
 person.addAll({'gender': 'male', 'city': 'Taipei'}); // 批量新增
@@ -251,7 +252,7 @@ print(person);
 ```
 {name: Ethan, age: 19, gender: male, city: Taipei}
 ```
-
+---
 ### 刪除
 ```dart
 person.remove('city'); // 刪除鍵
@@ -262,7 +263,7 @@ print(person);
 ```
 {name: Ethan, age: 19, gender: male}
 ```
-
+---
 ### 遍歷
 ```dart
 person.forEach((key, value) {
@@ -276,7 +277,7 @@ name: Ethan
 age: 19
 gender: male
 ```
-
+---
 ### 展開運算子（spread operator）
 ```dart
 var map1 = {'a': 1, 'b': 2};
