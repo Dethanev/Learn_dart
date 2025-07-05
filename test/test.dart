@@ -1920,24 +1920,40 @@ Dart 中的泛型接口：
 //   print(p.getName());
 // }
 
-void main() {
-/* const 常量 */
-  const PI = 3.14;
-  // PI = 3.1415926; 不行
-  print(PI);
+// void main() {
+// /* const 常量 */
+//   const PI = 3.14;
+//   // PI = 3.1415926; 不行
+//   print(PI);
 
-/* final 常量 */
-  final Pi = 3.14;
-  // PI = 3.1415926; 不行
-  print(Pi);
+// /* final 常量 */
+//   final Pi = 3.14;
+//   // PI = 3.1415926; 不行
+//   print(Pi);
 
-/* final 和 const 區別: final 可以開始不賦值 只能賦一次 ，而final 不僅有const的編譯時常 */
+// /* final 和 const 區別: final 可以開始不賦值 只能賦一次 ，而final 不僅有const的編譯時常 */
 
-  final a;
-  a = 13; // 只能賦值一次
-  //a=14; 不能賦值第二次
-  print(a);
+//   final a;
+//   a = 13; // 只能賦值一次
+//   //a=14; 不能賦值第二次
+//   print(a);
 
-  final d = DateTime.now(); // 2025-07-04 19:36:27.987462
-  print(d);
+//   final d = DateTime.now(); // 2025-07-04 19:36:27.987462
+//   print(d);
+// }
+
+void main(){
+// List list = [1, 2, 3];
+// Set set = {1, 2, 3};
+// Map map = {'name': 'Ethan', 'age': 18};
+
+// print(list);
+// print(set);
+// print(map);
+
+// List myList = ["Ethan", 'Chris', "Lily"];
+// var str = myList.join('-'); //list 轉換成字符串
+
+// print(str); // Ethan-Chris-Lily
+// print(str is String); // true 是String類型 可以用String 宣告
 }
