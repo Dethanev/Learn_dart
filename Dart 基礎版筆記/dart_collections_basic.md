@@ -1,22 +1,22 @@
 
-# 🌟 Dart 容器（集合）基礎筆記
+#  Dart 容器（集合）基礎筆記
 
 ## 🟢 容器總覽
 
 Dart 有三種常用容器（集合）：
 
-- **List** 👉 有順序、可重複，類似陣列。
-- **Set** 👉 無順序、不重複，用來去重。
-- **Map** 👉 鍵值對，類似字典（dict）。
+- **List**:  有順序、可重複，類似陣列。
+- **Set** :  無順序、不重複，用來去重。
+- **Map** :  鍵值對，類似字典（dict）。
 
 ```dart
-List list1 = [1, 2, 3];
-Set set1 = {1, 2, 3};
-Map map1 = {'name': 'Ethan', 'age': 18};
+List list = [1, 2, 3];
+Set set = {1, 2, 3};
+Map map = {'name': 'Ethan', 'age': 18};
 
-print(list1);
-print(set1);
-print(map1);
+print(list);
+print(set);
+print(map);
 ```
 
 ✅ **輸出結果**
@@ -42,7 +42,7 @@ list.add(6);   // 加到最後
 print(list);
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 [1, 2, 3, 4, 5]
 1
@@ -54,7 +54,7 @@ list.insert(0, 0); // 在 index 0 插入 0
 print(list);
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 [0, 1, 2, 3, 4, 5, 6]
 ```
@@ -64,7 +64,7 @@ list.remove(3); // 移除第一個值為 3 的元素
 print(list);
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 [0, 1, 2, 4, 5, 6]
 ```
@@ -86,7 +86,7 @@ set1.remove(2);
 print(set1);
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 {1, 2, 3, 4, 5}
 {1, 2, 3, 4, 5, 6}
@@ -110,7 +110,7 @@ print(person);
 print(person['name']); // 取值
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 {name: Ethan, age: 18}
 Ethan
@@ -121,7 +121,7 @@ person['gender'] = 'male'; // 新增或修改
 print(person);
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 {name: Ethan, age: 18, gender: male}
 ```
@@ -131,7 +131,7 @@ person.remove('age'); // 刪除鍵
 print(person);
 ```
 
-✅ **輸出結果**
+ **輸出結果**
 ```
 {name: Ethan, gender: male}
 ```
@@ -148,7 +148,7 @@ print(person);
 
 ---
 
-## ✅ 下一步（進階）
+##  下一步（進階）
 
 後續可以學：
 
@@ -162,4 +162,3 @@ print(person);
 ### 💬 最後提醒
 
 > 🎯 建議先把這些基本操作寫到「盲打會」，再慢慢補進階操作，不用急！
-> 如果想一起補進階版本，跟我說「繼續生成 04」即可 💪
