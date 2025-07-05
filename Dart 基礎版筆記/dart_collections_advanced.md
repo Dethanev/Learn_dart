@@ -32,7 +32,7 @@ print(map);
 
 ### List 裡面的常用屬性 
 
-### length (長度)   isEmpty (是否空)   isNotEmpty (是否不為空)
+### length (長度) |  isEmpty (是否空) |  isNotEmpty (是否不為空)
 ```dart
 List myList = ["Ethan", 'Chris', "Lily"];
 
