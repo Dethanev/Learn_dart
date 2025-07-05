@@ -19,7 +19,7 @@ print(set);
 print(map);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 [1, 2, 3]
 {1, 2, 3}
@@ -41,7 +41,7 @@ print(myList.isEmpty);
 print(myList.isNotEmpty);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 3
 false
@@ -63,7 +63,7 @@ List newMyList = myList.toList(); // Iterable 轉回 List 就可以修改
 print(newMyList);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 (LY, Chris, Ethan)
 [Ethan, Chris, LY]
@@ -80,7 +80,7 @@ myList.addAll(["芒果", "草莓"]); // 多個資料拼接到列表裡 所以要
 print(myList);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 ['香蕉','蘋果','芭樂','釋迦','芒果','草莓']
 ```
@@ -94,7 +94,7 @@ print(myList.indexOf("LY"));  // 查找數據 查找不到回傳-1
 print(myList);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 2
 -1
@@ -109,7 +109,7 @@ myList.removeAt(1);    // 傳入索引值 刪除 1 數據就是 Chris
 print(myList);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 [Ethan]
 ```
@@ -122,7 +122,7 @@ myList.fillRange(0, 2, 'aaa'); // 修改多個數據 0是開始 2是結尾 所�
 print(myList);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 [aaa,aaa,Lily]
 ```
@@ -136,7 +136,7 @@ myList.insertAll(0, ['aaa','bbb']);  // 插入多個數據 在原本 Ethan 的�
 print(myList);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 [aaa, bbb, Ethan, aaa, Chris, Lily]
 ```
@@ -150,7 +150,7 @@ print(str);
 print(str is String); // 是String類型 可以用String 宣告
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 Ethan-Chris-Lily
 true
@@ -165,7 +165,7 @@ print(list);
 print(list is List); // 是List類型 可以用List 宣告
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 Ethan-Chris-Lily
 true
@@ -182,7 +182,7 @@ var setNoDup = Set.from(listWithDup);
 print(setNoDup);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {1, 2, 3}
 ```
@@ -196,7 +196,7 @@ var setB = {3, 4, 5, 6};
 print(setA.union(setB)); // 聯集
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {1, 2, 3, 4, 5, 6}
 ```
@@ -206,7 +206,7 @@ print(setA.union(setB)); // 聯集
 print(setA.intersection(setB)); // 交集
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {3, 4}
 ```
@@ -216,7 +216,7 @@ print(setA.intersection(setB)); // 交集
 print(setA.difference(setB)); // 差集（A - B）
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {1, 2}
 ```
@@ -237,7 +237,7 @@ person['age'] = 19; // 修改值
 print(person);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {name: Ethan, age: 19}
 ```
@@ -248,7 +248,7 @@ person.addAll({'gender': 'male', 'city': 'Taipei'}); // 批量新增
 print(person);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {name: Ethan, age: 19, gender: male, city: Taipei}
 ```
@@ -259,7 +259,7 @@ person.remove('city'); // 刪除鍵
 print(person);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {name: Ethan, age: 19, gender: male}
 ```
@@ -271,7 +271,7 @@ person.forEach((key, value) {
 });
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 name: Ethan
 age: 19
@@ -287,7 +287,7 @@ var mergedMap = {...map1, ...map2}; // 後面會覆蓋前面
 print(mergedMap);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 {a: 1, b: 3, c: 4}
 ```
@@ -323,7 +323,7 @@ var squares = myNum.map((n) => n * n).toList();
 print(squares);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 [1, 4, 9, 16]
 ```
@@ -337,7 +337,7 @@ var even = myNum.where((n) => n % 2 == 0).toList();
 print(even);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 [2, 4]
 ```
@@ -351,7 +351,7 @@ bool hasEven = myNum.any((n) => n % 2 == 0);
 print(hasEven);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 true
 ```
@@ -361,7 +361,7 @@ bool allPositive = myNum.every((n) => n > 0);
 print(allPositive);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 true
 ```
@@ -378,7 +378,7 @@ for (var entry in map.entries) {
 }
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 a: 10
 b: 20
@@ -390,7 +390,7 @@ print(map.keys);
 print(map.values);
 ```
 
- **輸出結果**
+✅ **輸出結果**
 ```
 (a, b, c)
 (10, 20, 30)
