@@ -399,6 +399,33 @@ print(map.values);
 
 ## 💬 進階總結
 
+| 屬性       | 說明    |
+| ---------- | -----  |
+| length     | 長度    |
+| reversed   | 翻轉    |
+| isEmpty    | 是否為空  |
+| isNotEmpty | 是否不為空 |
+
+| 方法        | 說明         | 備註（參數）                    |
+| --------- | ---------- | ------------------------- |
+| add       | 增加         |                           |
+| addAll    | 拼接數組       |                           |
+| indexOf   | 查找         | 傳入具體值                     |
+| remove    | 刪除         | 傳入具體值                     |
+| removeAt  | 刪除         | 傳入索引值                     |
+| fillRange | 修改         |                           |
+| insert    | 插入         | 指定位置插入 (index, value)     |
+| insertAll | 插入         | 指定位置插入 List (index, list) |
+| toList    | 類型轉換       | 其他類型轉換成 List              |
+| join      | 字串轉換       | List 轉換成字串                |
+| split     | 字串轉 List   | 實際是 String 方法             |
+| forEach   | 遍歷         |                           |
+| map       | 映射轉換       |                           |
+| where     | 過濾         | 回傳符合條件的鍵值對                |
+| any       | 是否有任一項符合條件 |                           |
+| every     | 是否所有項都符合條件 |                           |
+
+
 | 方法      | 適用集合 | 說明                      |
 |-------------|----------|-------------------------|
 | `forEach` | List, Set, Map | 逐一遍歷每個元素 |
