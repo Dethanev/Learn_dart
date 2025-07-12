@@ -35,7 +35,7 @@ https://www.bilibili.com/video/BV1S4411E7LY?spm_id_from=333.788.videopod.episode
 | `demo 12` | 泛型方法 泛型類                                     |
 | `demo 13` | 自訂義庫 系統庫                                     |
 | `demo 14` | Null safety   late   required                      |
-| `demo 15` | 性能優化之長量                                      |
+| `demo 15` | 性能優化之常量                                      |
 | `test.dart`  | 主測試場，用來試寫各段邏輯或函式驗證               |
 
 ---
