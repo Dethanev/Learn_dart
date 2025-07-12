@@ -59,6 +59,6 @@ https://www.bilibili.com/video/BV1S4411E7LY?spm_id_from=333.788.videopod.episode
 
 ## 💬 歡迎交流
 
-如果你也是喜歡用實作學習、喜歡挑戰腦袋邏輯的朋友，歡迎來 GitHub 聊聊～
+如果你也是喜歡用實作學習、喜歡挑戰腦袋邏輯的朋友，歡迎來 GitHub 交流～
 
 > 「不是在練習 Dart，就是在準備練習 Dart 的路上」😎
