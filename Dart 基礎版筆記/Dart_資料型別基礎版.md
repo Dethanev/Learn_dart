@@ -1,7 +1,7 @@
 
 # Dart 資料型別筆記（含輸出結果）
 
-## 1. 數據類型介紹
+##  數據類型介紹
 
 Dart 支援以下常見資料型別：
 
@@ -24,7 +24,7 @@ main() {
 
 ---
 
-## 2. 字串類型
+##  字串類型
 
 ```dart
 String str1 = 'Hello';
@@ -36,7 +36,7 @@ print(str1 + " " + str2);
 
 ---
 
-## 3. 數值類型
+##  數值類型
 
 ```dart
 int a = 20;
@@ -48,7 +48,7 @@ print(a + b);
 
 ---
 
-## 4. 布林類型
+##  布林類型
 
 ```dart
 bool flag1 = true;
@@ -65,7 +65,7 @@ if (1 > 2) {
 
 ---
 
-## 5. List (陣列/集合)
+##  List (陣列/集合)
 
 ```dart
 var li = ["Ethan", 20, true];
@@ -90,7 +90,7 @@ print(l2);
 
 ---
 
-## 6. Map (字典)
+##  Map (字典)
 
 ```dart
 var person = {
@@ -107,7 +107,7 @@ print(person["name"]);
 
 ---
 
-## 7. 類型判斷
+##  類型判斷
 
 ```dart
 var str1 = "1234";

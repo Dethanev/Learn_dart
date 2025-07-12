@@ -1942,7 +1942,7 @@ Dart 中的泛型接口：
 //   print(d);
 // }
 
-void main(){
+// void main(){
 // List list = [1, 2, 3];
 // Set set = {1, 2, 3};
 // Map map = {'name': 'Ethan', 'age': 18};
@@ -1956,4 +1956,23 @@ void main(){
 
 // print(str); // Ethan-Chris-Lily
 // print(str is String); // true 是String類型 可以用String 宣告
+// }
+
+class Person {
+  String? name;
+  num? age;
+
+  Person(this.name, this.age);
+
+  void printInfo() {
+    print("名字:${this.name} 年齡:${this.age}");
+  }
+}
+
+void main() {
+  Person p = Person("ethan", 19);
+
+  print(p.name);
+  print(p.age);
+  p.printInfo();
 }
