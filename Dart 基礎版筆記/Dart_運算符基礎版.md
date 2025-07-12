@@ -27,8 +27,8 @@ int a = 5;
 int b = 3;
 print(a == b); // a是否等於b
 print(a != b); // a是不否等於b
-print(a > b);a是否大於b
-print(a < b);a是否小於b
+print(a > b);  // a是否大於b
+print(a < b);  // a是否小於b
 print(a >= b); // a是否大於等於b
 print(a <= b); // a是否小於等於b
 ```
