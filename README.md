@@ -27,8 +27,15 @@ https://www.bilibili.com/video/BV1S4411E7LY?spm_id_from=333.788.videopod.episode
 | `demo 04` | 各種運算符 條表達式 的詳細介紹                       |
 | `demo 05` | 迴圈的詳細介紹                                      |
 | `demo 06` | 三大容器 List Set Map 的詳細介紹                    |
-| `demo 07` | 函式Function的詳細介紹                                      |
-| `demo 08` | 物件導向OOP的詳細介紹                                      |
+| `demo 07` | 函式Function的詳細介紹                              |
+| `demo 08` | 類的詳細介紹                                        |
+| `demo 09` | 類的繼承                                            |
+| `demo 10` | 類的抽象多態                                        |
+| `demo 11` | 一個類多個接口 mixins                               |
+| `demo 12` | 泛型方法 泛型類                                     |
+| `demo 13` | 自訂義庫 系統庫                                     |
+| `demo 14` | Null safety   late   required                      |
+| `demo 15` | 性能優化之長量                                      |
 | `test.dart`  | 主測試場，用來試寫各段邏輯或函式驗證               |
 
 ---
